@@ -1,0 +1,30 @@
+description <http://caltech.edu/examples/sum1#> as sum1 {
+	
+	uses <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph#> as ch
+	
+	ci xi : ch:SquareVariable
+	
+	ci xj : ch:SquareVariable
+	
+	ci xk : ch:SquareVariable
+	
+	ci xl : ch:SquareVariable
+	
+	ri xi_xj : ch:MappingEdge [
+		from xi
+		to xj
+		ch:function "f"
+	]
+	
+	ri xk_xj : ch:MappingEdge [
+		from xk
+		to xj
+		ch:function "g"
+	]
+	
+	ri xl_xj : ch:MappingEdge [
+		from xl
+		to xj
+		ch:function "h"
+	]
+}
