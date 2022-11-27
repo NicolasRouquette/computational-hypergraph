@@ -73,10 +73,8 @@ dependencies {
  * A task to extract and merge the OML dependencies
  */
 task omlDependencies(type:io.opencaesar.oml.merge.OmlMergeTask, group:"oml", dependsOn: configurations.oml) {
-    inputCatalogPaths = [ file('catalog.xml') ]
     inputZipPaths = configurations.oml.files
-    inputFolderPaths = []
-    outputFolderPath = file('build/oml')
+    outputCatalogFolder = file('build/oml')
 }
 
 /*
@@ -149,16 +147,14 @@ task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn:
 /*
  * A task to build the project, which executes several tasks together
  */
-tasks.named('build') {
-    group "oml"
-    dependsOn owlReason
+task build(group: "oml", dependsOn: owlReason) {
 }
 
 /*
  * A task to delete the build artifacts
  */
-tasks.named('clean') {
-    group "oml"
+task clean(group: "oml")  {
+    delete file('build')
 }
 
 /*
