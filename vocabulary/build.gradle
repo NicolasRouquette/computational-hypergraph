@@ -1,8 +1,8 @@
 /* 
  * The Maven coordinates for the project artifact
  */
-ext.title = 'Computational Hypergraph'
-description = 'This is the Computational Hypergraph vocabular'
+ext.title = 'Computational Hypergraph Vocabulary'
+description = 'This is the Computational Hypergraph vocabulary'
 group = 'caltech.edu'
 version = '1.0.0'
 

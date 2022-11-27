@@ -1,34 +1,32 @@
 description <http://caltech.edu/examples/sum1-expanded#> as sum1-expanded {
 	
-	uses <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph#> as ch
+	uses <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph1#> as ch
 	
 	ci xi : ch:SquareVariable
 	ci fxi : ch:SquareVariable
 	
-	ci xj : ch:SquareVariable
+	ri xi_fxi : ch:MappingEdge [
+		from xi
+		to fxi
+		ch:mappingFunction "f"
+	]
 	
 	ci xk : ch:SquareVariable
 	ci fxk : ch:SquareVariable
 	
-	ci xl : ch:SquareVariable
-	ci fxl : ch:SquareVariable
-	
-	ri xi_fxi : ch:MappingEdge [
-		from xi
-		to fxi
-		ch:function "f"
-	]
-	
 	ri xk_fxk : ch:MappingEdge [
 		from xk
 		to fxk
-		ch:function "g"
+		ch:mappingFunction "g"
 	]
+	
+	ci xl : ch:SquareVariable
+	ci fxl : ch:SquareVariable
 	
 	ri xl_fxl : ch:MappingEdge [
 		from xl
 		to fxl
-		ch:function "h"
+		ch:mappingFunction "h"
 	]
 	
 	ci triple : ch:CircleVariable
@@ -54,7 +52,10 @@ description <http://caltech.edu/examples/sum1-expanded#> as sum1-expanded {
 	ri triple_xj : ch:MappingEdge [
 		from triple
 		to xj
-		ch:function "sum"
+		ch:mappingFunction "Sigma"
 	]
+	
+	ci xj : ch:SquareVariable
+	
 	
 }

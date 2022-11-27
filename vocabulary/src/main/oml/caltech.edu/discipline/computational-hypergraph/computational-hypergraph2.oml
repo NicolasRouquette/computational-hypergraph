@@ -1,0 +1,67 @@
+@dc:title "Computational Hypergraph Ontology"
+@dc:type "Discipline"
+@dc:creator "Systems Engineering & Formulation Division"
+@dc:^description "The Computational Hypergraph Ontology defines concepts and properties for describing the topology of computational hypergraphs."
+@dc:rights '''Copyright 2022, by the California Institute of Technology. ALL RIGHTS RESERVED. United States Government Sponsorship acknowledged. Any commercial use must be negotiated with the Office of Technology Transfer at the California Institute of Technology.
+
+This software may be subject to U.S. export control laws. By accepting this software, the user agrees to comply with all applicable U.S. export laws and regulations. User has the responsibility to obtain export licenses, or other export authority as may be required before exporting such information to foreign countries or providing access to foreign persons.'''
+vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph2#> as computational-hypergraph2 {
+	
+	extends <http://purl.org/dc/elements/1.1/> as dc
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+	
+	@rdfs:label "Variable"
+	@rdfs:comment "Corresponds to $\V$"
+	concept Variable
+	
+	@rdfs:label "Square Variable"
+	@rdfs:comment "Corresponds to $\V_{\square}$"
+	concept SquareVariable :> Variable
+	
+	@rdfs:comment "The indexed arguments are the results of the mapping functions applied to the sources of the mapping edges."
+	scalar property squareFunction [
+		domain SquareVariable
+		range xsd:string
+		functional
+	]
+	
+	@rdfs:label "Circle Variable"
+	@rdfs:comment "Corresponds to $\V_{\circle}$"
+	concept CircleVariable :> Variable
+	
+	@rdfs:label "Edge"
+	@rdfs:comment "Corresponds to $\CE$"
+	relation entity Edge [
+		from Variable
+		to Variable
+		forward edge
+		functional
+		inverse functional
+	]
+	
+	scalar property index [
+		domain Edge
+		range xsd:int
+		functional
+	]
+	
+	relation entity AggregationEdge :> Edge [
+		from Variable
+		to CircleVariable
+		forward aggregation
+	]
+	
+	relation entity MappingEdge :> Edge [
+		from Variable
+		to SquareVariable
+		forward mapping
+	]
+	
+	scalar property mappingFunction [
+		domain MappingEdge
+		range xsd:string
+		functional
+	]
+	
+}
