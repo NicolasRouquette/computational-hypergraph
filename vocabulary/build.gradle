@@ -66,8 +66,7 @@ ext {
  * The OML dependencies
  */
 dependencies {
-    oml "gov.nasa.jpl.imce.caesar.vocabularies:foundation:$foundationVersion"
-	oml "gov.nasa.jpl.imce.autonomica:state-analysis-vocabularies:$saVersion"
+	oml "io.opencaesar.ontologies:core-vocabularies:$coreVersion"
 }
 
 /*
