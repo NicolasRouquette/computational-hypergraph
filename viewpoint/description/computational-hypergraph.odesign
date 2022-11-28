@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="computational-hypergraph" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="computational-hypergraph" version="12.0.0.2017041100">
   <ownedViewpoints name="Computational Hypergraph" modelFileExtension="*.oml">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Computational Hypergraph" titleExpression="aql:self.prefix + ' (Computational Hypergraph)'" domainClass="oml.Description" enablePopupBars="true">
       <defaultLayer name="Default">
-        <nodeMappings name="CircleVariable" semanticCandidatesExpression="aql:self.getOwnedNamedInstances()->select(i|i.isKindOf('ch:CircleVariable'))->sortedBy(i|i.name)" domainClass="oml.ConceptInstance">
+        <nodeMappings name="CircleVariable" semanticCandidatesExpression="aql:self.getOwnedNamedInstances()->select(i|i.isKindOf('ch:CircleVariable'))->sortedBy(i|i.name)" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@toolSections.0/@ownedTools[name='']" domainClass="oml.ConceptInstance">
           <style xsi:type="style:EllipseNodeDescription" labelSize="12" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="SquareVariable" preconditionExpression="aql:self.isKindOf('ch:SquareVariable')" semanticCandidatesExpression="aql:self.getOwnedNamedInstances()->select(i|i.isKindOf('ch:SquareVariable'))->sortedBy(i|i.name)" domainClass="oml.ConceptInstance">
+        <nodeMappings name="SquareVariable" preconditionExpression="aql:self.isKindOf('ch:SquareVariable')" semanticCandidatesExpression="aql:self.getOwnedNamedInstances()->select(i|i.isKindOf('ch:SquareVariable'))->sortedBy(i|i.name)" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@toolSections.0/@ownedTools[name='']" domainClass="oml.ConceptInstance">
           <style xsi:type="style:SquareDescription" labelSize="12" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="MappingEdge" preconditionExpression="aql:self.isKindOf('ch:MappingEdge')" sourceMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='CircleVariable']" targetMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']" targetFinderExpression="aql:self.getTarget()" sourceFinderExpression="aql:self.getSource()" domainClass="oml.RelationInstance" useDomainElement="true">
+        <edgeMappings name="MappingEdge" preconditionExpression="aql:self.isKindOf('ch:MappingEdge')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@toolSections.0/@ownedTools[name='']" sourceMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='CircleVariable']" targetMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']" targetFinderExpression="aql:self.getTarget()" sourceFinderExpression="aql:self.getSource()" domainClass="oml.RelationInstance" useDomainElement="true">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -25,7 +25,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="AggregationEdge" preconditionExpression="aql:self.isKindOf('ch:AggregationEdge')" sourceMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='CircleVariable']" targetMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='CircleVariable']" targetFinderExpression="aql:self.getTarget()" sourceFinderExpression="aql:self.getSource()" domainClass="oml.RelationInstance" useDomainElement="true">
+        <edgeMappings name="AggregationEdge" preconditionExpression="aql:self.isKindOf('ch:AggregationEdge')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@toolSections.0/@ownedTools[name='']" sourceMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='CircleVariable']" targetMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='CircleVariable']" targetFinderExpression="aql:self.getTarget()" sourceFinderExpression="aql:self.getSource()" domainClass="oml.RelationInstance" useDomainElement="true">
           <style lineStyle="dash" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -33,6 +33,17 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:DoubleClickDescription" mappings="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='CircleVariable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.openInOmlEditor()"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="edu.caltech.ch.OmlServices"/>
