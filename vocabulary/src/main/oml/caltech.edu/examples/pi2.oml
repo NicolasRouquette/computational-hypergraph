@@ -1,4 +1,4 @@
-description <http://caltech.edu/examples/sum3#> as sum3 {
+description <http://caltech.edu/examples/pi2#> as pi2 {
 	
 	uses <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph2#> as ch
 	
