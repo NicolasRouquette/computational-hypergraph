@@ -1,5 +1,13 @@
 # Computational Hypergraphs
 
+The purpose of this repository is to explore how to specify what information is required to define a 'computational hypergraph' according to this paper: https://arxiv.org/abs/2110.10323
+
+The paper's formulation corresponds to [computational-hypergraph1 Vocabulary](vocabulary/src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph1.oml).
+
+The proposed formulation corresponds to [computational-hypergraph2 Vocabulary](vocabulary/src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph2.oml).
+
+Both formulations are specified in the [Ontological Modeling Language](http://www.opencaesar.io/oml/). This language helps focus on the information involved in 'computational hypergraph' rather than a particular implementation in a programming language such as [Matlab](https://www.mathworks.com/help/matlab/), [Python](https://www.python.org/), [Scala3](https://www.scala-lang.org/), etc... or a formal specification & programming language like [Lean4](https://leanprover.github.io/). OML is not a programming language like Matlab, Python or Scala; instead, it is a specification language like Lean4; the key difference is that Lean4 is a theorem-proving language whereas OML uses OWL2-DL's semantics for automatic entailment calculation and reasoning.
+
 ## 1 Original formulation & example
 
 [computational-hypergraph1 Vocabulary](vocabulary/src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph1.oml):
