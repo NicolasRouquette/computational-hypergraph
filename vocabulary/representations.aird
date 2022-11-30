@@ -15,6 +15,7 @@
     <semanticResources>build/oml/opencaesar.io/viewpoint.oml</semanticResources>
     <semanticResources>build/oml/www.w3.org/1999/02/22-rdf-syntax-ns.oml</semanticResources>
     <semanticResources>src/main/oml/caltech.edu/examples/pi2.oml</semanticResources>
+    <semanticResources>src/main/oml/caltech.edu/examples/pi1.oml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_9FbK0G6TEe2pvoRkDP4MxA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_9WQcIG6TEe2pvoRkDP4MxA" name="Sum1 Viewer" repPath="#_9WPOAG6TEe2pvoRkDP4MxA" changeId="c9d9840e-cc50-4c55-bd2e-ffa0c556349b">
@@ -32,17 +33,21 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_WldqAG6pEe2pvoRkDP4MxA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_OAFrcG6wEe2sJI0U9TX3eA" name="sum2 (Computational Hypergraph)" repPath="#_OAD2QG6wEe2sJI0U9TX3eA" changeId="b646e7fd-b3c4-453e-b2c0-1ad681c2910a">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_OAFrcG6wEe2sJI0U9TX3eA" name="sum2 (Computational Hypergraph)" repPath="#_OAD2QG6wEe2sJI0U9TX3eA" changeId="ffd44983-8b49-4830-8466-00436aa38121">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']"/>
         <target xmi:type="oml:Description" href="src/main/oml/caltech.edu/examples/sum2.oml#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_5Y7kwm6wEe2sJI0U9TX3eA" name="sum1-expanded (Computational Hypergraph)" repPath="#_5Y7kwG6wEe2sJI0U9TX3eA" changeId="74e3bb2a-347c-44a7-8caf-67fe604bd231">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_5Y7kwm6wEe2sJI0U9TX3eA" name="sum1-expanded (Computational Hypergraph)" repPath="#_5Y7kwG6wEe2sJI0U9TX3eA" changeId="7cbede10-60d1-4981-9d5d-aed0bd874710">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']"/>
         <target xmi:type="oml:Description" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_7Pqc4m6wEe2sJI0U9TX3eA" name="sum1 (Computational Hypergraph)" repPath="#_7Pqc4G6wEe2sJI0U9TX3eA" changeId="5f2395fe-5655-4e6e-ba61-69e34e4f6fee">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_7Pqc4m6wEe2sJI0U9TX3eA" name="sum1 (Computational Hypergraph)" repPath="#_7Pqc4G6wEe2sJI0U9TX3eA" changeId="8e35edbc-2d0a-42fb-835c-992befeafc39">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']"/>
         <target xmi:type="oml:Description" href="src/main/oml/caltech.edu/examples/sum1.oml#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_gsfhQXBSEe2hkvg4GGjMWw" name="pi1 (Computational Hypergraph)" repPath="#_gse6MHBSEe2hkvg4GGjMWw" changeId="28d044b5-788e-4da7-8766-84918105e71a">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']"/>
+        <target xmi:type="oml:Description" href="src/main/oml/caltech.edu/examples/pi1.oml#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_bs8hMG6pEe2pvoRkDP4MxA">
@@ -58,7 +63,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_5uGUwG62Ee2hkvg4GGjMWw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6KvNcG62Ee2hkvg4GGjMWw" name="pi2 (Computational Hypergraph)" repPath="#_6Kt_UG62Ee2hkvg4GGjMWw" changeId="ce401fc3-076d-41e9-998e-3a63afba1c6c">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6KvNcG62Ee2hkvg4GGjMWw" name="pi2 (Computational Hypergraph)" repPath="#_6Kt_UG62Ee2hkvg4GGjMWw" changeId="dbb6072f-044c-4f8c-bffb-4f0ca60dea6b">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']"/>
         <target xmi:type="oml:Description" href="src/main/oml/caltech.edu/examples/pi2.oml#/"/>
       </ownedRepresentationDescriptors>
@@ -1125,7 +1130,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OAR4sm6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_OAO1YW6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OAO1Ym6wEe2sJI0U9TX3eA" x="324" y="156" width="52" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OAO1Ym6wEe2sJI0U9TX3eA" x="72" y="48" width="50" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_OAQqkG6wEe2sJI0U9TX3eA" type="2001" element="_OAJ84W6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_OARRoG6wEe2sJI0U9TX3eA" type="5002">
@@ -1136,7 +1141,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OASfwm6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_OAQqkW6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OAQqkm6wEe2sJI0U9TX3eA" x="156" y="72" width="52" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OAQqkm6wEe2sJI0U9TX3eA" x="540" y="192" width="159" height="87"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_OARRom6wEe2sJI0U9TX3eA" type="2001" element="_OAJ85G6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_OARRpW6wEe2sJI0U9TX3eA" type="5002">
@@ -1147,7 +1152,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OASfxW6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_OARRo26wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OARRpG6wEe2sJI0U9TX3eA" y="156" width="57" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OARRpG6wEe2sJI0U9TX3eA" x="84" y="204" width="55" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_OARRp26wEe2sJI0U9TX3eA" type="2001" element="_OAJ8526wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_OARRqm6wEe2sJI0U9TX3eA" type="5002">
@@ -1158,54 +1163,56 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OASfyG6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_OARRqG6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OARRqW6wEe2sJI0U9TX3eA" x="156" y="156" width="52" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OARRqW6wEe2sJI0U9TX3eA" x="84" y="360" width="50" height="49"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_OAIHsm6wEe2sJI0U9TX3eA"/>
         <edges xmi:type="notation:Edge" xmi:id="_OASfyW6wEe2sJI0U9TX3eA" type="4001" element="_OALyEG6wEe2sJI0U9TX3eA" source="_OAO1YG6wEe2sJI0U9TX3eA" target="_OAQqkG6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_OASfzW6wEe2sJI0U9TX3eA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OASfzm6wEe2sJI0U9TX3eA" x="4" y="-8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OASfzm6wEe2sJI0U9TX3eA" x="-100" y="-29"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_OATG0G6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATG0W6wEe2sJI0U9TX3eA" x="1" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATG0W6wEe2sJI0U9TX3eA" x="-6" y="-7"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_OATG0m6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATG026wEe2sJI0U9TX3eA" y="11"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATG026wEe2sJI0U9TX3eA" x="-37" y="170"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_OASfym6wEe2sJI0U9TX3eA"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_OASfym6wEe2sJI0U9TX3eA" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_OASfy26wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OASfzG6wEe2sJI0U9TX3eA" points="[0, 0, 168, 60]$[-142, -51, 26, 9]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OATG1G6wEe2sJI0U9TX3eA" id="(0.5,0.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OASfzG6wEe2sJI0U9TX3eA" points="[25, 0, -497, -163]$[522, 0, 0, -163]$[522, 120, 0, -43]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OATG1G6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIqFUHBREe2hkvg4GGjMWw" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_OATG1m6wEe2sJI0U9TX3eA" type="4001" element="_OAMZIm6wEe2sJI0U9TX3eA" source="_OARRom6wEe2sJI0U9TX3eA" target="_OAQqkG6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_OATG2m6wEe2sJI0U9TX3eA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATG226wEe2sJI0U9TX3eA" x="-1" y="-11"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATG226wEe2sJI0U9TX3eA" x="-7" y="-36"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_OATG3G6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATG3W6wEe2sJI0U9TX3eA" y="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATG3W6wEe2sJI0U9TX3eA" x="-1" y="5"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_OATG3m6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATG326wEe2sJI0U9TX3eA" x="1" y="7"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATG326wEe2sJI0U9TX3eA" x="-1" y="5"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_OATG126wEe2sJI0U9TX3eA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_OATG2G6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OATG2W6wEe2sJI0U9TX3eA" points="[0, 0, -154, 60]$[128, -50, -26, 10]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OATG4G6wEe2sJI0U9TX3eA" id="(0.5,0.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OATG2W6wEe2sJI0U9TX3eA" points="[28, 0, -480, -7]$[429, 5, -79, -2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OATG4G6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIpeQHBREe2hkvg4GGjMWw" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_OATG4m6wEe2sJI0U9TX3eA" type="4001" element="_OANAMG6wEe2sJI0U9TX3eA" source="_OARRp26wEe2sJI0U9TX3eA" target="_OAQqkG6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_OATt4G6wEe2sJI0U9TX3eA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATt4W6wEe2sJI0U9TX3eA" x="1" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATt4W6wEe2sJI0U9TX3eA" x="-97" y="-29"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_OATt4m6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATt426wEe2sJI0U9TX3eA" x="11" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATt426wEe2sJI0U9TX3eA" x="131"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_OATt5G6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATt5W6wEe2sJI0U9TX3eA" x="1" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OATt5W6wEe2sJI0U9TX3eA" x="-15" y="-150"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_OATG426wEe2sJI0U9TX3eA"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_OATG426wEe2sJI0U9TX3eA" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_OATG5G6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OATG5W6wEe2sJI0U9TX3eA" points="[0, 0, 0, 35]$[0, -35, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OATt5m6wEe2sJI0U9TX3eA" id="(0.5,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OATt526wEe2sJI0U9TX3eA" id="(0.5,1.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OATG5W6wEe2sJI0U9TX3eA" points="[25, 0, -485, 149]$[510, 0, 0, 149]$[510, -105, 0, 44]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OATt5m6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OATt526wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -1215,12 +1222,15 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_OAJV0G6wEe2sJI0U9TX3eA" name="xi" outgoingEdges="_OALyEG6wEe2sJI0U9TX3eA" width="10" height="10" resizeKind="NSEW">
       <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xi"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xi"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_OAJV0W6wEe2sJI0U9TX3eA" labelSize="12" labelPosition="node">
         <description xmi:type="style:SquareDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_OAJ84W6wEe2sJI0U9TX3eA" name="xj" incomingEdges="_OALyEG6wEe2sJI0U9TX3eA _OAMZIm6wEe2sJI0U9TX3eA _OANAMG6wEe2sJI0U9TX3eA" width="10" height="10" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_OAJ84W6wEe2sJI0U9TX3eA" name="xj&#xA;squareFunction: Sigma" incomingEdges="_OALyEG6wEe2sJI0U9TX3eA _OAMZIm6wEe2sJI0U9TX3eA _OANAMG6wEe2sJI0U9TX3eA" width="10" height="10" resizeKind="NSEW">
       <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xj"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xj"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1234,6 +1244,9 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_OAJ85G6wEe2sJI0U9TX3eA" name="xk" outgoingEdges="_OAMZIm6wEe2sJI0U9TX3eA" width="10" height="10" resizeKind="NSEW">
       <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xk"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xk"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_OAJ85W6wEe2sJI0U9TX3eA" labelSize="12" labelPosition="node">
         <description xmi:type="style:SquareDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']/@style"/>
       </ownedStyle>
@@ -1242,33 +1255,38 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_OAJ8526wEe2sJI0U9TX3eA" name="xl" outgoingEdges="_OANAMG6wEe2sJI0U9TX3eA" width="10" height="10" resizeKind="NSEW">
       <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xl"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xl"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_OAJ86G6wEe2sJI0U9TX3eA" labelSize="12" labelPosition="node">
         <description xmi:type="style:SquareDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OALyEG6wEe2sJI0U9TX3eA" sourceNode="_OAJV0G6wEe2sJI0U9TX3eA" targetNode="_OAJ84W6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OALyEG6wEe2sJI0U9TX3eA" name="mappingFunction: f&#xA;index: 1" sourceNode="_OAJV0G6wEe2sJI0U9TX3eA" targetNode="_OAJ84W6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xi_xj"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xi_xj"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OALyEW6wEe2sJI0U9TX3eA" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OALyEW6wEe2sJI0U9TX3eA" size="2" routingStyle="manhattan" centered="Both">
+        <customFeatures>routingStyle</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_OALyEm6wEe2sJI0U9TX3eA" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OAMZIm6wEe2sJI0U9TX3eA" sourceNode="_OAJ85G6wEe2sJI0U9TX3eA" targetNode="_OAJ84W6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OAMZIm6wEe2sJI0U9TX3eA" name="mappingFunction: g&#xA;index: 2" sourceNode="_OAJ85G6wEe2sJI0U9TX3eA" targetNode="_OAJ84W6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xk_xj"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xk_xj"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OAMZI26wEe2sJI0U9TX3eA" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OAMZI26wEe2sJI0U9TX3eA" size="2" centered="Both">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_OAMZJG6wEe2sJI0U9TX3eA" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OANAMG6wEe2sJI0U9TX3eA" sourceNode="_OAJ8526wEe2sJI0U9TX3eA" targetNode="_OAJ84W6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OANAMG6wEe2sJI0U9TX3eA" name="mappingFunction: h&#xA;index: 3" sourceNode="_OAJ8526wEe2sJI0U9TX3eA" targetNode="_OAJ84W6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xl_xj"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum2.oml#xl_xj"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OANAMW6wEe2sJI0U9TX3eA" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OANAMW6wEe2sJI0U9TX3eA" size="2" routingStyle="manhattan" centered="Both">
+        <customFeatures>routingStyle</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_OANAMm6wEe2sJI0U9TX3eA" labelSize="12"/>
       </ownedStyle>
@@ -1291,7 +1309,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZEHom6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_5ZBrYW6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZBrYm6wEe2sJI0U9TX3eA" x="156" y="144" width="80" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZBrYm6wEe2sJI0U9TX3eA" x="648" y="264" width="74" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_5ZCScm6wEe2sJI0U9TX3eA" type="2001" element="_5Y-BAG6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZCSdW6wEe2sJI0U9TX3eA" type="5002">
@@ -1302,7 +1320,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZEHpW6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_5ZCSc26wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZCSdG6wEe2sJI0U9TX3eA" x="48" y="252" width="58" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZCSdG6wEe2sJI0U9TX3eA" x="420" y="132" width="55" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_5ZCSd26wEe2sJI0U9TX3eA" type="2001" element="_5Y-BA26wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZCSem6wEe2sJI0U9TX3eA" type="5002">
@@ -1313,7 +1331,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZEHqG6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_5ZCSeG6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZCSeW6wEe2sJI0U9TX3eA" x="288" y="252" width="63" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZCSeW6wEe2sJI0U9TX3eA" x="408" y="264" width="59" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_5ZCSfG6wEe2sJI0U9TX3eA" type="2001" element="_5Y-BBm6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZCSf26wEe2sJI0U9TX3eA" type="5002">
@@ -1324,7 +1342,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZEHq26wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_5ZCSfW6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZCSfm6wEe2sJI0U9TX3eA" x="168" y="252" width="58" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZCSfm6wEe2sJI0U9TX3eA" x="420" y="408" width="55" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_5ZCSgW6wEe2sJI0U9TX3eA" type="2001" element="_5Y-BCW6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZC5gG6wEe2sJI0U9TX3eA" type="5002">
@@ -1335,7 +1353,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZEHrm6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_5ZCSgm6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZCSg26wEe2sJI0U9TX3eA" x="48" y="360" width="52" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZCSg26wEe2sJI0U9TX3eA" x="84" y="132" width="50" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_5ZC5gm6wEe2sJI0U9TX3eA" type="2001" element="_5Y-oEW6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZC5hW6wEe2sJI0U9TX3eA" type="5002">
@@ -1346,7 +1364,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZEHsW6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_5ZC5g26wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZC5hG6wEe2sJI0U9TX3eA" x="168" y="36" width="52" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZC5hG6wEe2sJI0U9TX3eA" x="972" y="264" width="50" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_5ZC5h26wEe2sJI0U9TX3eA" type="2001" element="_5Y_PIW6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZC5im6wEe2sJI0U9TX3eA" type="5002">
@@ -1357,7 +1375,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZEusm6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_5ZC5iG6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZC5iW6wEe2sJI0U9TX3eA" x="288" y="360" width="57" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZC5iW6wEe2sJI0U9TX3eA" x="84" y="264" width="55" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_5ZDgkG6wEe2sJI0U9TX3eA" type="2001" element="_5Y_PJG6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZDgk26wEe2sJI0U9TX3eA" type="5002">
@@ -1368,7 +1386,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZFVwm6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_5ZDgkW6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZDgkm6wEe2sJI0U9TX3eA" x="168" y="360" width="52" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZDgkm6wEe2sJI0U9TX3eA" x="84" y="408" width="50" height="49"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_5Y8L026wEe2sJI0U9TX3eA"/>
         <edges xmi:type="notation:Edge" xmi:id="_5ZFVw26wEe2sJI0U9TX3eA" type="4001" element="_5Y_2MG6wEe2sJI0U9TX3eA" source="_5ZCSgW6wEe2sJI0U9TX3eA" target="_5ZCScm6wEe2sJI0U9TX3eA">
@@ -1376,112 +1394,112 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZFVyG6wEe2sJI0U9TX3eA" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZFVyW6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZFVym6wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZFVym6wEe2sJI0U9TX3eA" x="1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZFVy26wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZFVzG6wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZFVzG6wEe2sJI0U9TX3eA" x="1" y="4"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_5ZFVxG6wEe2sJI0U9TX3eA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_5ZFVxW6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZFVxm6wEe2sJI0U9TX3eA" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF80G6wEe2sJI0U9TX3eA" id="(0.5,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF80W6wEe2sJI0U9TX3eA" id="(0.5,1.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZFVxm6wEe2sJI0U9TX3eA" points="[25, 0, -313, 0]$[311, 0, -27, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF80G6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF80W6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_5ZF80m6wEe2sJI0U9TX3eA" type="4001" element="_5Y_2NW6wEe2sJI0U9TX3eA" source="_5ZC5h26wEe2sJI0U9TX3eA" target="_5ZCSd26wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZF81m6wEe2sJI0U9TX3eA" type="6001">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8126wEe2sJI0U9TX3eA" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZF82G6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF82W6wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF82W6wEe2sJI0U9TX3eA" x="1" y="3"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZF82m6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8226wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8226wEe2sJI0U9TX3eA" x="-50" y="31"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_5ZF8026wEe2sJI0U9TX3eA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_5ZF81G6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZF81W6wEe2sJI0U9TX3eA" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF83G6wEe2sJI0U9TX3eA" id="(0.49122807017543857,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF83W6wEe2sJI0U9TX3eA" id="(0.49206349206349204,1.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZF81W6wEe2sJI0U9TX3eA" points="[28, 0, -298, 0]$[297, 0, -29, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF83G6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF83W6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_5ZF83m6wEe2sJI0U9TX3eA" type="4001" element="_5ZAdRG6wEe2sJI0U9TX3eA" source="_5ZDgkG6wEe2sJI0U9TX3eA" target="_5ZCSfG6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZF84m6wEe2sJI0U9TX3eA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8426wEe2sJI0U9TX3eA" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8426wEe2sJI0U9TX3eA" x="-12" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZF85G6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF85W6wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF85W6wEe2sJI0U9TX3eA" x="3" y="4"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZF85m6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8526wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8526wEe2sJI0U9TX3eA" x="25" y="39"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_5ZF8326wEe2sJI0U9TX3eA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_5ZF84G6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZF84W6wEe2sJI0U9TX3eA" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF86G6wEe2sJI0U9TX3eA" id="(0.5,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF86W6wEe2sJI0U9TX3eA" id="(0.5,1.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZF84W6wEe2sJI0U9TX3eA" points="[25, 0, -313, 0]$[311, 0, -27, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF86G6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF86W6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_5ZF86m6wEe2sJI0U9TX3eA" type="4001" element="_5ZAdSW6wEe2sJI0U9TX3eA" source="_5ZBrYG6wEe2sJI0U9TX3eA" target="_5ZC5gm6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZF87m6wEe2sJI0U9TX3eA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8726wEe2sJI0U9TX3eA" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8726wEe2sJI0U9TX3eA" x="-4" y="-12"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZF88G6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF88W6wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF88W6wEe2sJI0U9TX3eA" x="-1" y="-2"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZF88m6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8826wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZF8826wEe2sJI0U9TX3eA" x="-194" y="60"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_5ZF8626wEe2sJI0U9TX3eA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_5ZF87G6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZF87W6wEe2sJI0U9TX3eA" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF89G6wEe2sJI0U9TX3eA" id="(0.5,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZGj4G6wEe2sJI0U9TX3eA" id="(0.5,1.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZF87W6wEe2sJI0U9TX3eA" points="[37, 0, -275, 0]$[287, 0, -25, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZF89G6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZGj4G6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_5ZGj4W6wEe2sJI0U9TX3eA" type="4001" element="_5ZAdTm6wEe2sJI0U9TX3eA" source="_5ZCScm6wEe2sJI0U9TX3eA" target="_5ZBrYG6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZGj5W6wEe2sJI0U9TX3eA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj5m6wEe2sJI0U9TX3eA" x="4" y="-11"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj5m6wEe2sJI0U9TX3eA" x="3" y="-9"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZGj526wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj6G6wEe2sJI0U9TX3eA" x="-4" y="11"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj6G6wEe2sJI0U9TX3eA" x="-4" y="5"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZGj6W6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj6m6wEe2sJI0U9TX3eA" x="-2" y="7"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj6m6wEe2sJI0U9TX3eA" x="-41" y="-26"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_5ZGj4m6wEe2sJI0U9TX3eA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_5ZGj426wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZGj5G6wEe2sJI0U9TX3eA" points="[0, 0, -119, 84]$[84, -59, -35, 25]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZGj626wEe2sJI0U9TX3eA" id="(0.5,0.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZGj5G6wEe2sJI0U9TX3eA" points="[28, 15, -210, -117]$[201, 111, -37, -21]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZGj626wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0rhTEG6zEe2S8ohYRwrklQ" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_5ZGj7W6wEe2sJI0U9TX3eA" type="4001" element="_5ZBEVG6wEe2sJI0U9TX3eA" source="_5ZCSd26wEe2sJI0U9TX3eA" target="_5ZBrYG6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZGj8W6wEe2sJI0U9TX3eA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj8m6wEe2sJI0U9TX3eA" x="-2" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj8m6wEe2sJI0U9TX3eA" x="1" y="-9"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZGj826wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj9G6wEe2sJI0U9TX3eA" x="5" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj9G6wEe2sJI0U9TX3eA" x="23" y="-5"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZGj9W6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj9m6wEe2sJI0U9TX3eA" x="2" y="11"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj9m6wEe2sJI0U9TX3eA" x="10" y="-11"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_5ZGj7m6wEe2sJI0U9TX3eA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_5ZGj726wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZGj8G6wEe2sJI0U9TX3eA" points="[0, 0, 123, 84]$[-87, -59, 36, 25]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZGj926wEe2sJI0U9TX3eA" id="(0.49206349206349204,0.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZGj8G6wEe2sJI0U9TX3eA" points="[30, 0, -218, 0]$[211, 0, -37, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZGj926wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0rhTEW6zEe2S8ohYRwrklQ" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_5ZGj-W6wEe2sJI0U9TX3eA" type="4001" element="_5ZBEWW6wEe2sJI0U9TX3eA" source="_5ZCSfG6wEe2sJI0U9TX3eA" target="_5ZBrYG6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_5ZGj_W6wEe2sJI0U9TX3eA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj_m6wEe2sJI0U9TX3eA" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZGj_m6wEe2sJI0U9TX3eA" y="-11"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZHK8G6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZHK8W6wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZHK8W6wEe2sJI0U9TX3eA" x="-2" y="-1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_5ZHK8m6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZHK826wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ZHK826wEe2sJI0U9TX3eA" x="2" y="5"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_5ZGj-m6wEe2sJI0U9TX3eA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_5ZGj-26wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZGj_G6wEe2sJI0U9TX3eA" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZHK9G6wEe2sJI0U9TX3eA" id="(0.5,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Bv2zcm6xEe2sJI0U9TX3eA" id="(0.5,1.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ZGj_G6wEe2sJI0U9TX3eA" points="[28, -17, -210, 127]$[201, -122, -37, 22]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ZHK9G6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Bv2zcm6xEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -1576,66 +1594,73 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5Y_2MG6wEe2sJI0U9TX3eA" sourceNode="_5Y-BCW6wEe2sJI0U9TX3eA" targetNode="_5Y-BAG6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5Y_2MG6wEe2sJI0U9TX3eA" name="mappingFunction: f" sourceNode="_5Y-BCW6wEe2sJI0U9TX3eA" targetNode="_5Y-BAG6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#xi_fxi"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#xi_fxi"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5Y_2MW6wEe2sJI0U9TX3eA" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5Y_2MW6wEe2sJI0U9TX3eA" size="2" centered="Both">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_5Y_2Mm6wEe2sJI0U9TX3eA" labelSize="12"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_w3mQMHBNEe2hkvg4GGjMWw" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5Y_2NW6wEe2sJI0U9TX3eA" sourceNode="_5Y_PIW6wEe2sJI0U9TX3eA" targetNode="_5Y-BA26wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5Y_2NW6wEe2sJI0U9TX3eA" name="mappingFunction: g" sourceNode="_5Y_PIW6wEe2sJI0U9TX3eA" targetNode="_5Y-BA26wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#xk_fxk"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#xk_fxk"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZAdQG6wEe2sJI0U9TX3eA" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZAdQG6wEe2sJI0U9TX3eA" size="2" centered="Both">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_5ZAdQW6wEe2sJI0U9TX3eA" labelSize="12"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_w3mQN3BNEe2hkvg4GGjMWw" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5ZAdRG6wEe2sJI0U9TX3eA" sourceNode="_5Y_PJG6wEe2sJI0U9TX3eA" targetNode="_5Y-BBm6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5ZAdRG6wEe2sJI0U9TX3eA" name="mappingFunction: h" sourceNode="_5Y_PJG6wEe2sJI0U9TX3eA" targetNode="_5Y-BBm6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#xl_fxl"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#xl_fxl"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZAdRW6wEe2sJI0U9TX3eA" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZAdRW6wEe2sJI0U9TX3eA" size="2" centered="Both">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_5ZAdRm6wEe2sJI0U9TX3eA" labelSize="12"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_w3mQPnBNEe2hkvg4GGjMWw" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5ZAdSW6wEe2sJI0U9TX3eA" sourceNode="_5Y9Z8G6wEe2sJI0U9TX3eA" targetNode="_5Y-oEW6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5ZAdSW6wEe2sJI0U9TX3eA" name="mappingFunction: Sigma" sourceNode="_5Y9Z8G6wEe2sJI0U9TX3eA" targetNode="_5Y-oEW6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#triple_xj"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#triple_xj"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZAdSm6wEe2sJI0U9TX3eA" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZAdSm6wEe2sJI0U9TX3eA" size="2" centered="Both">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_5ZAdS26wEe2sJI0U9TX3eA" labelSize="12"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_w3mQRXBNEe2hkvg4GGjMWw" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5ZAdTm6wEe2sJI0U9TX3eA" sourceNode="_5Y-BAG6wEe2sJI0U9TX3eA" targetNode="_5Y9Z8G6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5ZAdTm6wEe2sJI0U9TX3eA" name="index: 1" sourceNode="_5Y-BAG6wEe2sJI0U9TX3eA" targetNode="_5Y9Z8G6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#fxi_tuple"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#fxi_tuple"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZBEUG6wEe2sJI0U9TX3eA" lineStyle="dash" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZBEUG6wEe2sJI0U9TX3eA" lineStyle="dash" size="2" centered="Both">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_5ZBEUW6wEe2sJI0U9TX3eA" labelSize="12"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_gfiAKnBOEe2hkvg4GGjMWw" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5ZBEVG6wEe2sJI0U9TX3eA" sourceNode="_5Y-BA26wEe2sJI0U9TX3eA" targetNode="_5Y9Z8G6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5ZBEVG6wEe2sJI0U9TX3eA" name="index: 2" sourceNode="_5Y-BA26wEe2sJI0U9TX3eA" targetNode="_5Y9Z8G6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#fxk_tuple"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#fxk_tuple"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZBEVW6wEe2sJI0U9TX3eA" lineStyle="dash" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZBEVW6wEe2sJI0U9TX3eA" lineStyle="dash" size="2" centered="Both">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_5ZBEVm6wEe2sJI0U9TX3eA" labelSize="12"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_gfinNHBOEe2hkvg4GGjMWw" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5ZBEWW6wEe2sJI0U9TX3eA" sourceNode="_5Y-BBm6wEe2sJI0U9TX3eA" targetNode="_5Y9Z8G6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5ZBEWW6wEe2sJI0U9TX3eA" name="index: 3" sourceNode="_5Y-BBm6wEe2sJI0U9TX3eA" targetNode="_5Y9Z8G6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#fxl_tuple"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1-expanded.oml#fxl_tuple"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZBEWm6wEe2sJI0U9TX3eA" lineStyle="dash" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5ZBEWm6wEe2sJI0U9TX3eA" lineStyle="dash" size="2" centered="Both">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_5ZBEW26wEe2sJI0U9TX3eA" labelSize="12"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_gfinOXBOEe2hkvg4GGjMWw" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']"/>
     </ownedDiagramElements>
@@ -1656,7 +1681,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PwjhG6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_7PvVYW6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PvVYm6wEe2sJI0U9TX3eA" x="168" y="132" width="52" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PvVYm6wEe2sJI0U9TX3eA" x="120" y="60" width="50" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_7PvVZW6wEe2sJI0U9TX3eA" type="2001" element="_7Ps5IW6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_7PvVaG6wEe2sJI0U9TX3eA" type="5002">
@@ -1667,7 +1692,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Pwjh26wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_7PvVZm6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PvVZ26wEe2sJI0U9TX3eA" x="168" y="24" width="52" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PvVZ26wEe2sJI0U9TX3eA" x="624" y="180" width="50" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_7PvVam6wEe2sJI0U9TX3eA" type="2001" element="_7Ps5JG6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_7PvVbW6wEe2sJI0U9TX3eA" type="5002">
@@ -1678,7 +1703,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Pwjim6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_7PvVa26wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PvVbG6wEe2sJI0U9TX3eA" x="48" y="132" width="57" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PvVbG6wEe2sJI0U9TX3eA" x="120" y="180" width="55" height="49"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_7Pv8cG6wEe2sJI0U9TX3eA" type="2001" element="_7Ps5J26wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_7PwjgG6wEe2sJI0U9TX3eA" type="5002">
@@ -1689,7 +1714,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PwjjW6wEe2sJI0U9TX3eA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_7Pv8cW6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Pv8cm6wEe2sJI0U9TX3eA" x="276" y="132" width="52" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Pv8cm6wEe2sJI0U9TX3eA" x="120" y="288" width="50" height="49"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_7PrD826wEe2sJI0U9TX3eA"/>
         <edges xmi:type="notation:Edge" xmi:id="_7PxKkG6wEe2sJI0U9TX3eA" type="4001" element="_7PuHQG6wEe2sJI0U9TX3eA" source="_7PvVYG6wEe2sJI0U9TX3eA" target="_7PvVZW6wEe2sJI0U9TX3eA">
@@ -1697,47 +1722,47 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKlW6wEe2sJI0U9TX3eA" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_7PxKlm6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKl26wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKl26wEe2sJI0U9TX3eA" x="11" y="-1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_7PxKmG6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKmW6wEe2sJI0U9TX3eA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKmW6wEe2sJI0U9TX3eA" x="-9" y="102"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7PxKkW6wEe2sJI0U9TX3eA"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7PxKkW6wEe2sJI0U9TX3eA" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_7PxKkm6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7PxKk26wEe2sJI0U9TX3eA" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7PxKmm6wEe2sJI0U9TX3eA" id="(0.5,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7PxKm26wEe2sJI0U9TX3eA" id="(0.5,1.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7PxKk26wEe2sJI0U9TX3eA" points="[25, 0, -479, -120]$[504, 0, 0, -120]$[504, 96, 0, -24]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7PxKmm6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7PxKm26wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_7PxKnG6wEe2sJI0U9TX3eA" type="4001" element="_7PuHRW6wEe2sJI0U9TX3eA" source="_7PvVam6wEe2sJI0U9TX3eA" target="_7PvVZW6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_7PxKoG6wEe2sJI0U9TX3eA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKoW6wEe2sJI0U9TX3eA" x="2" y="-12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKoW6wEe2sJI0U9TX3eA" x="53" y="-15"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_7PxKom6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKo26wEe2sJI0U9TX3eA" x="-4" y="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKo26wEe2sJI0U9TX3eA" x="-18" y="4"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_7PxKpG6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKpW6wEe2sJI0U9TX3eA" x="-4" y="7"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PxKpW6wEe2sJI0U9TX3eA" x="-29" y="4"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_7PxKnW6wEe2sJI0U9TX3eA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_7PxKnm6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7PxKn26wEe2sJI0U9TX3eA" points="[0, 0, -118, 84]$[92, -66, -26, 18]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7PxKpm6wEe2sJI0U9TX3eA" id="(0.49122807017543857,0.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7PxKn26wEe2sJI0U9TX3eA" points="[28, 0, -474, 0]$[477, 0, -25, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7PxKpm6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sRneUG6yEe2S8ohYRwrklQ" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_7PxxoG6wEe2sJI0U9TX3eA" type="4001" element="_7PuuUm6wEe2sJI0U9TX3eA" source="_7Pv8cG6wEe2sJI0U9TX3eA" target="_7PvVZW6wEe2sJI0U9TX3eA">
           <children xmi:type="notation:Node" xmi:id="_7PyYsG6wEe2sJI0U9TX3eA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PyYsW6wEe2sJI0U9TX3eA" x="-2" y="-9"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PyYsW6wEe2sJI0U9TX3eA" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_7PyYsm6wEe2sJI0U9TX3eA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PyYs26wEe2sJI0U9TX3eA" x="7" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PyYs26wEe2sJI0U9TX3eA" x="60" y="-4"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_7PyYtG6wEe2sJI0U9TX3eA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PyYtW6wEe2sJI0U9TX3eA" x="5" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PyYtW6wEe2sJI0U9TX3eA" x="-54" y="-4"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7PxxoW6wEe2sJI0U9TX3eA"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7PxxoW6wEe2sJI0U9TX3eA" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_7Pxxom6wEe2sJI0U9TX3eA" fontName="Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7Pxxo26wEe2sJI0U9TX3eA" points="[0, 0, 108, 84]$[-82, -64, 26, 20]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7PyYtm6wEe2sJI0U9TX3eA" id="(0.5,0.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7Pxxo26wEe2sJI0U9TX3eA" points="[25, 0, -479, 108]$[504, 0, 0, 108]$[504, -83, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7PyYtm6wEe2sJI0U9TX3eA" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sRoFYG6yEe2S8ohYRwrklQ" id="(0.5,0.5)"/>
         </edges>
       </data>
@@ -1789,28 +1814,30 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7PuHQG6wEe2sJI0U9TX3eA" sourceNode="_7PsSEG6wEe2sJI0U9TX3eA" targetNode="_7Ps5IW6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7PuHQG6wEe2sJI0U9TX3eA" name="mappingFunction: f" sourceNode="_7PsSEG6wEe2sJI0U9TX3eA" targetNode="_7Ps5IW6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1.oml#xi_xj"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1.oml#xi_xj"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7PuHQW6wEe2sJI0U9TX3eA" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7PuHQW6wEe2sJI0U9TX3eA" size="2" routingStyle="manhattan" centered="Both">
+        <customFeatures>routingStyle</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7PuHQm6wEe2sJI0U9TX3eA" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7PuHRW6wEe2sJI0U9TX3eA" sourceNode="_7Ps5JG6wEe2sJI0U9TX3eA" targetNode="_7Ps5IW6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7PuHRW6wEe2sJI0U9TX3eA" name="mappingFunction: g" sourceNode="_7Ps5JG6wEe2sJI0U9TX3eA" targetNode="_7Ps5IW6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1.oml#xk_xj"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1.oml#xk_xj"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7PuHRm6wEe2sJI0U9TX3eA" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7PuHRm6wEe2sJI0U9TX3eA" size="2" centered="Both">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7PuHR26wEe2sJI0U9TX3eA" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7PuuUm6wEe2sJI0U9TX3eA" sourceNode="_7Ps5J26wEe2sJI0U9TX3eA" targetNode="_7Ps5IW6wEe2sJI0U9TX3eA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7PuuUm6wEe2sJI0U9TX3eA" name="mappingFunction: h" sourceNode="_7Ps5J26wEe2sJI0U9TX3eA" targetNode="_7Ps5IW6wEe2sJI0U9TX3eA">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1.oml#xl_xj"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/sum1.oml#xl_xj"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7PuuU26wEe2sJI0U9TX3eA" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7PuuU26wEe2sJI0U9TX3eA" size="2" routingStyle="manhattan" centered="Both">
+        <customFeatures>routingStyle</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7PuuVG6wEe2sJI0U9TX3eA" labelSize="12"/>
       </ownedStyle>
@@ -1847,7 +1874,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LJdIm62Ee2hkvg4GGjMWw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_6LFywW62Ee2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LFywm62Ee2hkvg4GGjMWw" x="192" y="168" width="50" height="48"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LFywm62Ee2hkvg4GGjMWw" x="96" y="60" width="50" height="48"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_6LHn8m62Ee2hkvg4GGjMWw" type="2001" element="_6K4-cW62Ee2hkvg4GGjMWw">
           <children xmi:type="notation:Node" xmi:id="_6LIPAG62Ee2hkvg4GGjMWw" type="5002">
@@ -1858,7 +1885,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LJdJW62Ee2hkvg4GGjMWw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_6LHn8262Ee2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LHn9G62Ee2hkvg4GGjMWw" x="192" y="60" width="50" height="48"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LHn9G62Ee2hkvg4GGjMWw" x="468" y="204" width="172" height="66"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_6LIPAm62Ee2hkvg4GGjMWw" type="2001" element="_6K4-dG62Ee2hkvg4GGjMWw">
           <children xmi:type="notation:Node" xmi:id="_6LIPBW62Ee2hkvg4GGjMWw" type="5002">
@@ -1869,7 +1896,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LKEMm62Ee2hkvg4GGjMWw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_6LIPA262Ee2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LIPBG62Ee2hkvg4GGjMWw" x="72" y="168" width="54" height="48"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LIPBG62Ee2hkvg4GGjMWw" x="94" y="213" width="54" height="48"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_6LIPB262Ee2hkvg4GGjMWw" type="2001" element="_6K5lgG62Ee2hkvg4GGjMWw">
           <children xmi:type="notation:Node" xmi:id="_6LI2EG62Ee2hkvg4GGjMWw" type="5002">
@@ -1880,54 +1907,56 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LKENW62Ee2hkvg4GGjMWw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_6LIPCG62Ee2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LIPCW62Ee2hkvg4GGjMWw" x="300" y="168" width="50" height="48"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LIPCW62Ee2hkvg4GGjMWw" x="84" y="336" width="50" height="48"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_6K0F8m62Ee2hkvg4GGjMWw"/>
         <edges xmi:type="notation:Edge" xmi:id="_6LLSUG62Ee2hkvg4GGjMWw" type="4001" element="_6K7asG62Ee2hkvg4GGjMWw" source="_6LFywG62Ee2hkvg4GGjMWw" target="_6LHn8m62Ee2hkvg4GGjMWw">
           <children xmi:type="notation:Node" xmi:id="_6LL5YG62Ee2hkvg4GGjMWw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LL5YW62Ee2hkvg4GGjMWw" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LL5YW62Ee2hkvg4GGjMWw" x="-57" y="-18"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_6LMgcG62Ee2hkvg4GGjMWw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LMgcW62Ee2hkvg4GGjMWw" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LMgcW62Ee2hkvg4GGjMWw" x="10" y="-1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_6LMgcm62Ee2hkvg4GGjMWw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LMgc262Ee2hkvg4GGjMWw" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LMgc262Ee2hkvg4GGjMWw" x="-41" y="161"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_6LLSUW62Ee2hkvg4GGjMWw"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_6LLSUW62Ee2hkvg4GGjMWw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_6LLSUm62Ee2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6LLSU262Ee2hkvg4GGjMWw" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6LQK0G62Ee2hkvg4GGjMWw" id="(0.5,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6LQK0W62Ee2hkvg4GGjMWw" id="(0.5,1.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6LLSU262Ee2hkvg4GGjMWw" points="[25, 0, -408, -153]$[433, 0, 0, -153]$[433, 120, 0, -33]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6LQK0G62Ee2hkvg4GGjMWw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6LQK0W62Ee2hkvg4GGjMWw" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_6LQx4G62Ee2hkvg4GGjMWw" type="4001" element="_6K8BxG62Ee2hkvg4GGjMWw" source="_6LIPAm62Ee2hkvg4GGjMWw" target="_6LHn8m62Ee2hkvg4GGjMWw">
           <children xmi:type="notation:Node" xmi:id="_6LQx5G62Ee2hkvg4GGjMWw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LQx5W62Ee2hkvg4GGjMWw" x="2" y="-11"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LQx5W62Ee2hkvg4GGjMWw" x="35" y="-27"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_6LQx5m62Ee2hkvg4GGjMWw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LQx5262Ee2hkvg4GGjMWw" x="-2" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LQx5262Ee2hkvg4GGjMWw" x="-8" y="2"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_6LQx6G62Ee2hkvg4GGjMWw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LQx6W62Ee2hkvg4GGjMWw" x="1" y="9"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LQx6W62Ee2hkvg4GGjMWw" x="-176" y="-52"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_6LQx4W62Ee2hkvg4GGjMWw"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_6LQx4m62Ee2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6LQx4262Ee2hkvg4GGjMWw" points="[0, 0, -118, 84]$[93, -67, -25, 17]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6LRY8G62Ee2hkvg4GGjMWw" id="(0.5,0.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6LQx4262Ee2hkvg4GGjMWw" points="[27, 0, -406, 0]$[347, 0, -86, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6LRY8G62Ee2hkvg4GGjMWw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nGoP8XBOEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_6LRY8m62Ee2hkvg4GGjMWw" type="4001" element="_6K8o0m62Ee2hkvg4GGjMWw" source="_6LIPB262Ee2hkvg4GGjMWw" target="_6LHn8m62Ee2hkvg4GGjMWw">
           <children xmi:type="notation:Node" xmi:id="_6LRY9m62Ee2hkvg4GGjMWw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LRY9262Ee2hkvg4GGjMWw" x="-1" y="-9"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LRY9262Ee2hkvg4GGjMWw" x="-57" y="-30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_6LRY-G62Ee2hkvg4GGjMWw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LRY-W62Ee2hkvg4GGjMWw" x="3" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LRY-W62Ee2hkvg4GGjMWw" x="10" y="-1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_6LRY-m62Ee2hkvg4GGjMWw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LRY-262Ee2hkvg4GGjMWw" x="2" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6LRY-262Ee2hkvg4GGjMWw" x="162" y="-161"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_6LRY8262Ee2hkvg4GGjMWw"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_6LRY8262Ee2hkvg4GGjMWw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_6LRY9G62Ee2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6LRY9W62Ee2hkvg4GGjMWw" points="[0, 0, 108, 84]$[-83, -65, 25, 19]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6LRY_G62Ee2hkvg4GGjMWw" id="(0.5,0.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6LRY9W62Ee2hkvg4GGjMWw" points="[25, 0, -420, 123]$[445, 0, 0, 123]$[445, -90, 0, 33]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6LRY_G62Ee2hkvg4GGjMWw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nGoP8HBOEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -1945,7 +1974,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_6K4-cW62Ee2hkvg4GGjMWw" name="xj" incomingEdges="_6K7asG62Ee2hkvg4GGjMWw _6K8BxG62Ee2hkvg4GGjMWw _6K8o0m62Ee2hkvg4GGjMWw" width="10" height="10" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_6K4-cW62Ee2hkvg4GGjMWw" name="xj&#xA;squareFunction: Pi" incomingEdges="_6K7asG62Ee2hkvg4GGjMWw _6K8BxG62Ee2hkvg4GGjMWw _6K8o0m62Ee2hkvg4GGjMWw" width="10" height="10" resizeKind="NSEW">
       <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi2.oml#xj"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi2.oml#xj"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1978,30 +2007,35 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6K7asG62Ee2hkvg4GGjMWw" sourceNode="_6K3wUG62Ee2hkvg4GGjMWw" targetNode="_6K4-cW62Ee2hkvg4GGjMWw">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6K7asG62Ee2hkvg4GGjMWw" name="mappingFunction: f&#xA;index: 1" sourceNode="_6K3wUG62Ee2hkvg4GGjMWw" targetNode="_6K4-cW62Ee2hkvg4GGjMWw">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi2.oml#xi_xj"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi2.oml#xi_xj"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6K8BwG62Ee2hkvg4GGjMWw" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6K8BwG62Ee2hkvg4GGjMWw" size="2" routingStyle="manhattan" centered="Both">
+        <customFeatures>routingStyle</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_6K8BwW62Ee2hkvg4GGjMWw" labelSize="12"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_nGnB1HBOEe2hkvg4GGjMWw" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6K8BxG62Ee2hkvg4GGjMWw" sourceNode="_6K4-dG62Ee2hkvg4GGjMWw" targetNode="_6K4-cW62Ee2hkvg4GGjMWw">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6K8BxG62Ee2hkvg4GGjMWw" name="mappingFunction: g&#xA;index: 2" sourceNode="_6K4-dG62Ee2hkvg4GGjMWw" targetNode="_6K4-cW62Ee2hkvg4GGjMWw">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi2.oml#xk_xj"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi2.oml#xk_xj"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6K8BxW62Ee2hkvg4GGjMWw" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6K8BxW62Ee2hkvg4GGjMWw" size="2" centered="Both">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_6K8Bxm62Ee2hkvg4GGjMWw" labelSize="12"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_nGno5HBOEe2hkvg4GGjMWw" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6K8o0m62Ee2hkvg4GGjMWw" sourceNode="_6K5lgG62Ee2hkvg4GGjMWw" targetNode="_6K4-cW62Ee2hkvg4GGjMWw">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6K8o0m62Ee2hkvg4GGjMWw" name="mappingFunction: h&#xA;index: 3" sourceNode="_6K5lgG62Ee2hkvg4GGjMWw" targetNode="_6K4-cW62Ee2hkvg4GGjMWw">
       <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi2.oml#xl_xj"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi2.oml#xl_xj"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6K8o0262Ee2hkvg4GGjMWw" size="2">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6K8o0262Ee2hkvg4GGjMWw" size="2" routingStyle="manhattan" centered="Both">
+        <customFeatures>routingStyle</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_6K8o1G62Ee2hkvg4GGjMWw" labelSize="12"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_nGno6XBOEe2hkvg4GGjMWw" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
     </ownedDiagramElements>
@@ -2009,5 +2043,370 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_6KumYG62Ee2hkvg4GGjMWw"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/computational-hypergraph/viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer"/>
     <target xmi:type="oml:Description" href="src/main/oml/caltech.edu/examples/pi2.oml#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_gse6MHBSEe2hkvg4GGjMWw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_gsfhQ3BSEe2hkvg4GGjMWw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_gsfhRHBSEe2hkvg4GGjMWw" type="Sirius" element="_gse6MHBSEe2hkvg4GGjMWw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_gsjLp3BSEe2hkvg4GGjMWw" type="2001" element="_gsgIUHBSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsjLqnBSEe2hkvg4GGjMWw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gsjLq3BSEe2hkvg4GGjMWw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gslA1XBSEe2hkvg4GGjMWw" type="3016" element="_gsgIUXBSEe2hkvg4GGjMWw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gslA1nBSEe2hkvg4GGjMWw" fontName="Arial"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gslA13BSEe2hkvg4GGjMWw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gsjLqHBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsjLqXBSEe2hkvg4GGjMWw" x="672" y="288" width="73" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gsjysHBSEe2hkvg4GGjMWw" type="2001" element="_gsgvYXBSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsjys3BSEe2hkvg4GGjMWw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gsjytHBSEe2hkvg4GGjMWw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gslA2HBSEe2hkvg4GGjMWw" type="3003" element="_gsgvYnBSEe2hkvg4GGjMWw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gslA2XBSEe2hkvg4GGjMWw" fontName="Arial"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gslA2nBSEe2hkvg4GGjMWw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gsjysXBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsjysnBSEe2hkvg4GGjMWw" x="396" y="108" width="55" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gsjytXBSEe2hkvg4GGjMWw" type="2001" element="_gsgvZHBSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsjyuHBSEe2hkvg4GGjMWw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gsjyuXBSEe2hkvg4GGjMWw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsln4HBSEe2hkvg4GGjMWw" type="3003" element="_gsgvZXBSEe2hkvg4GGjMWw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gsln4XBSEe2hkvg4GGjMWw" fontName="Arial"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsln4nBSEe2hkvg4GGjMWw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gsjytnBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsjyt3BSEe2hkvg4GGjMWw" x="396" y="277" width="59" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gsjyunBSEe2hkvg4GGjMWw" type="2001" element="_gsgvZ3BSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsjyvXBSEe2hkvg4GGjMWw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gsjyvnBSEe2hkvg4GGjMWw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsln43BSEe2hkvg4GGjMWw" type="3003" element="_gsgvaHBSEe2hkvg4GGjMWw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gsln5HBSEe2hkvg4GGjMWw" fontName="Arial"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsln5XBSEe2hkvg4GGjMWw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gsjyu3BSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsjyvHBSEe2hkvg4GGjMWw" x="398" y="431" width="55" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gsjyv3BSEe2hkvg4GGjMWw" type="2001" element="_gshWcXBSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gskZwHBSEe2hkvg4GGjMWw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gskZwXBSEe2hkvg4GGjMWw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsln5nBSEe2hkvg4GGjMWw" type="3003" element="_gshWcnBSEe2hkvg4GGjMWw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gsln53BSEe2hkvg4GGjMWw" fontName="Arial"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsln6HBSEe2hkvg4GGjMWw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gsjywHBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsjywXBSEe2hkvg4GGjMWw" x="84" y="108" width="50" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gskZwnBSEe2hkvg4GGjMWw" type="2001" element="_gshWdHBSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gskZxXBSEe2hkvg4GGjMWw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gskZxnBSEe2hkvg4GGjMWw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsln6XBSEe2hkvg4GGjMWw" type="3003" element="_gshWdXBSEe2hkvg4GGjMWw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gsln6nBSEe2hkvg4GGjMWw" fontName="Arial"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsln63BSEe2hkvg4GGjMWw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gskZw3BSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gskZxHBSEe2hkvg4GGjMWw" x="960" y="288" width="50" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gskZx3BSEe2hkvg4GGjMWw" type="2001" element="_gshWd3BSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gskZynBSEe2hkvg4GGjMWw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gskZy3BSEe2hkvg4GGjMWw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsln7HBSEe2hkvg4GGjMWw" type="3003" element="_gshWeHBSEe2hkvg4GGjMWw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gsln7XBSEe2hkvg4GGjMWw" fontName="Arial"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsln7nBSEe2hkvg4GGjMWw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gskZyHBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gskZyXBSEe2hkvg4GGjMWw" x="84" y="277" width="54" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gslA0HBSEe2hkvg4GGjMWw" type="2001" element="_gshWenBSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gslA03BSEe2hkvg4GGjMWw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gslA1HBSEe2hkvg4GGjMWw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsln73BSEe2hkvg4GGjMWw" type="3003" element="_gshWe3BSEe2hkvg4GGjMWw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gsln8HBSEe2hkvg4GGjMWw" fontName="Arial"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsln8XBSEe2hkvg4GGjMWw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gslA0XBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gslA0nBSEe2hkvg4GGjMWw" x="86" y="431" width="50" height="48"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_gsfhRXBSEe2hkvg4GGjMWw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_gsln8nBSEe2hkvg4GGjMWw" type="4001" element="_gsh9gHBSEe2hkvg4GGjMWw" source="_gsjyv3BSEe2hkvg4GGjMWw" target="_gsjysHBSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsln9nBSEe2hkvg4GGjMWw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsln93BSEe2hkvg4GGjMWw" x="-1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsln-HBSEe2hkvg4GGjMWw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsln-XBSEe2hkvg4GGjMWw" x="14" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsmO8HBSEe2hkvg4GGjMWw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsmO8XBSEe2hkvg4GGjMWw" x="13"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gsln83BSEe2hkvg4GGjMWw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gsln9HBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gsln9XBSEe2hkvg4GGjMWw" points="[25, 0, -289, 0]$[287, 0, -27, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsmO8nBSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsmO83BSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_gsmO9HBSEe2hkvg4GGjMWw" type="4001" element="_gsh9hXBSEe2hkvg4GGjMWw" source="_gskZx3BSEe2hkvg4GGjMWw" target="_gsjytXBSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsmO-HBSEe2hkvg4GGjMWw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsmO-XBSEe2hkvg4GGjMWw" x="-1" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsmO-nBSEe2hkvg4GGjMWw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsmO-3BSEe2hkvg4GGjMWw" x="2" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsmO_HBSEe2hkvg4GGjMWw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsmO_XBSEe2hkvg4GGjMWw" x="2" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gsmO9XBSEe2hkvg4GGjMWw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gsmO9nBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gsmO93BSEe2hkvg4GGjMWw" points="[27, 0, -287, 0]$[285, 0, -29, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsmO_nBSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsmO_3BSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_gsmPAHBSEe2hkvg4GGjMWw" type="4001" element="_gsh9inBSEe2hkvg4GGjMWw" source="_gslA0HBSEe2hkvg4GGjMWw" target="_gsjyunBSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsmPBHBSEe2hkvg4GGjMWw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsmPBXBSEe2hkvg4GGjMWw" x="-2" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsmPBnBSEe2hkvg4GGjMWw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsmPB3BSEe2hkvg4GGjMWw" x="7" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsmPCHBSEe2hkvg4GGjMWw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsmPCXBSEe2hkvg4GGjMWw" x="5" y="-4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gsmPAXBSEe2hkvg4GGjMWw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gsmPAnBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gsmPA3BSEe2hkvg4GGjMWw" points="[25, 0, -289, 0]$[287, 0, -27, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsmPCnBSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsmPC3BSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_gsmPDHBSEe2hkvg4GGjMWw" type="4001" element="_gsikkHBSEe2hkvg4GGjMWw" source="_gsjLp3BSEe2hkvg4GGjMWw" target="_gskZwnBSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsmPEHBSEe2hkvg4GGjMWw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsmPEXBSEe2hkvg4GGjMWw" x="-1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsmPEnBSEe2hkvg4GGjMWw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsmPE3BSEe2hkvg4GGjMWw" x="1" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsmPFHBSEe2hkvg4GGjMWw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsmPFXBSEe2hkvg4GGjMWw" x="1" y="-3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gsmPDXBSEe2hkvg4GGjMWw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gsmPDnBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gsmPD3BSEe2hkvg4GGjMWw" points="[37, 0, -240, 0]$[252, 0, -25, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsmPFnBSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsmPF3BSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_gsm2AHBSEe2hkvg4GGjMWw" type="4001" element="_gsiklXBSEe2hkvg4GGjMWw" source="_gsjysHBSEe2hkvg4GGjMWw" target="_gsjLp3BSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsm2BHBSEe2hkvg4GGjMWw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsm2BXBSEe2hkvg4GGjMWw" x="-1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsm2BnBSEe2hkvg4GGjMWw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsm2B3BSEe2hkvg4GGjMWw" x="-1" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsm2CHBSEe2hkvg4GGjMWw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsm2CXBSEe2hkvg4GGjMWw" x="-2" y="-8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gsm2AXBSEe2hkvg4GGjMWw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gsm2AnBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gsm2A3BSEe2hkvg4GGjMWw" points="[28, 17, -257, -163]$[249, 157, -36, -23]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsm2CnBSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsm2C3BSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_gsm2DHBSEe2hkvg4GGjMWw" type="4001" element="_gsikmnBSEe2hkvg4GGjMWw" source="_gsjytXBSEe2hkvg4GGjMWw" target="_gsjLp3BSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsm2EHBSEe2hkvg4GGjMWw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsm2EXBSEe2hkvg4GGjMWw" x="1" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsm2EnBSEe2hkvg4GGjMWw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsm2E3BSEe2hkvg4GGjMWw" x="-3" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsm2FHBSEe2hkvg4GGjMWw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsm2FXBSEe2hkvg4GGjMWw" x="-3" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gsm2DXBSEe2hkvg4GGjMWw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gsm2DnBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gsm2D3BSEe2hkvg4GGjMWw" points="[30, 1, -253, -10]$[247, 9, -36, -2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsm2FnBSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsm2F3BSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_gsm2GHBSEe2hkvg4GGjMWw" type="4001" element="_gsjLoHBSEe2hkvg4GGjMWw" source="_gsjyunBSEe2hkvg4GGjMWw" target="_gsjLp3BSEe2hkvg4GGjMWw">
+          <children xmi:type="notation:Node" xmi:id="_gsm2HHBSEe2hkvg4GGjMWw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsm2HXBSEe2hkvg4GGjMWw" x="1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsm2HnBSEe2hkvg4GGjMWw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsm2H3BSEe2hkvg4GGjMWw" x="4" y="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gsm2IHBSEe2hkvg4GGjMWw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsm2IXBSEe2hkvg4GGjMWw" x="3" y="-4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gsm2GXBSEe2hkvg4GGjMWw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gsm2GnBSEe2hkvg4GGjMWw" fontName="Arial" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gsm2G3BSEe2hkvg4GGjMWw" points="[28, -15, -255, 128]$[247, -125, -36, 18]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsm2InBSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gsm2I3BSEe2hkvg4GGjMWw" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_gsjLpXBSEe2hkvg4GGjMWw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_gsjLpnBSEe2hkvg4GGjMWw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gsgIUHBSEe2hkvg4GGjMWw" name="triple" outgoingEdges="_gsikkHBSEe2hkvg4GGjMWw" incomingEdges="_gsiklXBSEe2hkvg4GGjMWw _gsikmnBSEe2hkvg4GGjMWw _gsjLoHBSEe2hkvg4GGjMWw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#triple"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#triple"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_gsgIUXBSEe2hkvg4GGjMWw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='CircleVariable']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='CircleVariable']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gsgvYXBSEe2hkvg4GGjMWw" name="fxi" outgoingEdges="_gsiklXBSEe2hkvg4GGjMWw" incomingEdges="_gsh9gHBSEe2hkvg4GGjMWw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxi"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxi"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gsgvYnBSEe2hkvg4GGjMWw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gsgvZHBSEe2hkvg4GGjMWw" name="fxk" outgoingEdges="_gsikmnBSEe2hkvg4GGjMWw" incomingEdges="_gsh9hXBSEe2hkvg4GGjMWw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxk"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxk"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gsgvZXBSEe2hkvg4GGjMWw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gsgvZ3BSEe2hkvg4GGjMWw" name="fxl" outgoingEdges="_gsjLoHBSEe2hkvg4GGjMWw" incomingEdges="_gsh9inBSEe2hkvg4GGjMWw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxl"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxl"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gsgvaHBSEe2hkvg4GGjMWw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gshWcXBSEe2hkvg4GGjMWw" name="xi" outgoingEdges="_gsh9gHBSEe2hkvg4GGjMWw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xi"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xi"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gshWcnBSEe2hkvg4GGjMWw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gshWdHBSEe2hkvg4GGjMWw" name="xj" incomingEdges="_gsikkHBSEe2hkvg4GGjMWw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xj"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xj"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gshWdXBSEe2hkvg4GGjMWw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gshWd3BSEe2hkvg4GGjMWw" name="xk" outgoingEdges="_gsh9hXBSEe2hkvg4GGjMWw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xk"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xk"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gshWeHBSEe2hkvg4GGjMWw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gshWenBSEe2hkvg4GGjMWw" name="xl" outgoingEdges="_gsh9inBSEe2hkvg4GGjMWw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xl"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xl"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gshWe3BSEe2hkvg4GGjMWw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@nodeMappings[name='SquareVariable']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_gsh9gHBSEe2hkvg4GGjMWw" name="mappingFunction: f" sourceNode="_gshWcXBSEe2hkvg4GGjMWw" targetNode="_gsgvYXBSEe2hkvg4GGjMWw">
+      <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xi_fxi"/>
+      <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xi_fxi"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_gsh9gXBSEe2hkvg4GGjMWw" size="2" centered="Both">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_gsh9gnBSEe2hkvg4GGjMWw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_gsh9hXBSEe2hkvg4GGjMWw" name="mappingFunction: g" sourceNode="_gshWd3BSEe2hkvg4GGjMWw" targetNode="_gsgvZHBSEe2hkvg4GGjMWw">
+      <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xk_fxk"/>
+      <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xk_fxk"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_gsh9hnBSEe2hkvg4GGjMWw" size="2" centered="Both">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_gsh9h3BSEe2hkvg4GGjMWw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_gsh9inBSEe2hkvg4GGjMWw" name="mappingFunction: h" sourceNode="_gshWenBSEe2hkvg4GGjMWw" targetNode="_gsgvZ3BSEe2hkvg4GGjMWw">
+      <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xl_fxl"/>
+      <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#xl_fxl"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_gsh9i3BSEe2hkvg4GGjMWw" size="2" centered="Both">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_gsh9jHBSEe2hkvg4GGjMWw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_gsikkHBSEe2hkvg4GGjMWw" name="mappingFunction: Pi" sourceNode="_gsgIUHBSEe2hkvg4GGjMWw" targetNode="_gshWdHBSEe2hkvg4GGjMWw">
+      <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#triple_xj"/>
+      <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#triple_xj"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_gsikkXBSEe2hkvg4GGjMWw" size="2" centered="Both">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_gsikknBSEe2hkvg4GGjMWw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='MappingEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_gsiklXBSEe2hkvg4GGjMWw" name="index: 1" sourceNode="_gsgvYXBSEe2hkvg4GGjMWw" targetNode="_gsgIUHBSEe2hkvg4GGjMWw">
+      <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxi_tuple"/>
+      <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxi_tuple"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_gsiklnBSEe2hkvg4GGjMWw" lineStyle="dash" size="2" centered="Both">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_gsikl3BSEe2hkvg4GGjMWw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_gsikmnBSEe2hkvg4GGjMWw" name="index: 2" sourceNode="_gsgvZHBSEe2hkvg4GGjMWw" targetNode="_gsgIUHBSEe2hkvg4GGjMWw">
+      <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxk_tuple"/>
+      <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxk_tuple"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_gsikm3BSEe2hkvg4GGjMWw" lineStyle="dash" size="2" centered="Both">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_gsiknHBSEe2hkvg4GGjMWw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_gsjLoHBSEe2hkvg4GGjMWw" name="index: 3" sourceNode="_gsgvZ3BSEe2hkvg4GGjMWw" targetNode="_gsgIUHBSEe2hkvg4GGjMWw">
+      <target xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxl_tuple"/>
+      <semanticElements xmi:type="oml:RelationInstance" href="src/main/oml/caltech.edu/examples/pi1.oml#fxl_tuple"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_gsjLoXBSEe2hkvg4GGjMWw" lineStyle="dash" size="2" centered="Both">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_gsjLonBSEe2hkvg4GGjMWw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer/@edgeMappings[name='AggregationEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_gsfhQHBSEe2hkvg4GGjMWw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/computational-hypergraph-viewpoint/description/computational-hypergraph.odesign#//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Computational%20Hypergraph']/@defaultLayer"/>
+    <target xmi:type="oml:Description" href="src/main/oml/caltech.edu/examples/pi1.oml#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

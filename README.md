@@ -103,7 +103,7 @@ The above diagram/model is conceptually equivalent to the following:
 
 ![](images/sum1-equivalent.png)
  
-However, the model becomes a lot more tedious to write (see [sum1-expanded.oml](vocabulary/src/main/oml/caltech.edu/examples/sum1-expanded.oml):
+However, the model becomes a lot more tedious to write (see [sum1-expanded.oml](vocabulary/src/main/oml/caltech.edu/examples/sum1-expanded.oml)):
 
 ```oml
 description <http://caltech.edu/examples/sum1-expanded#> as sum1-expanded {
@@ -169,11 +169,21 @@ description <http://caltech.edu/examples/sum1-expanded#> as sum1-expanded {
 }
 ```
 
+What if we needed a different mapping function than `Sigma`?
+
+With this vocabulary, we would have to use the expanded form like this:
+
+![](images/pi1.png)
+
+That is, the difference between `Sigma` and `Pi` yields a significant structural difference that is unavoidable.
+
 ## 2 Proposed formulation & example
 
-The orginal formulation is biased for the case where a square variable is the sum of all of its incoming mapping edge functions. In case where it would be useful to have a different square function other than sum, e.g. product, it would be nice to have a compact way of modeling this that is on the same order of modeling complexity than the sum case.
+Recognizing that the orginal formulation was biased for the case where a square variable is the sum of all of its incoming mapping edge functions,
+the key idea is to associate each square variable with a square function whose arguments are the results of all input edges.
 
-The following proposed vocabulary achieves this flexibility by observing that a square variable is, conceptually, the result of applying a square function to all of its incoming mapping edges.
+
+The following proposed vocabulary provides this flexibility:
 
 [computational-hypergraph2 Vocabulary](vocabulary/src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph2.oml):
 
@@ -242,6 +252,10 @@ vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational
 
 Now, modeling square sums or square products is equally simple.
 
+The sum example becomes equally consise as the original formulation except that we explicitly state that `xj`' square function is `Sigma` and specify the index of each mapping function result as an argument for the `Sigma` function (this index is optional and would be useful where the order of actual arguments matters).
+
+![](images/sum2.png)
+
 [sum2 example](vocabulary/src/main/oml/caltech.edu/examples/sum2.oml):
 
 ```oml
@@ -283,6 +297,10 @@ description <http://caltech.edu/examples/sum2#> as sum2 {
 }
 ```
 
+The product case is equally concise:
+
+![](images/pi2.png)
+
 [pi2 example](vocabulary/src/main/oml/caltech.edu/examples/pi2.oml):
 
 ```oml
@@ -323,12 +341,6 @@ description <http://caltech.edu/examples/pi2#> as pi2 {
   
 }
 ```
-
-Both examples have the same visualization as the original sum1 example:
-
-![](images/sum1.png)
-
-(Note: the visualization will be improved to show the square function specified in the square variables.)
 
 The difference between the two examples is in the specification of the `xj` square variable:
 

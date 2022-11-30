@@ -59,6 +59,13 @@ public class OmlServices {
 		return literal != null;
 	}
 
+
+    public static String getScalarValueIfAny(NamedInstance instance, String prefix, String propertyName) {
+    	var property = (ScalarProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), propertyName);
+		var literal = (property != null) ? (Literal) OmlRead.getPropertyValue(instance, property) : null;
+		return (literal != null) ? prefix+OmlRead.getStringValue(literal) : null;
+	}
+    
     public static String getScalarValue(NamedInstance instance, String propertyName) {
     	var property = (ScalarProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), propertyName);
 		var literal = (property != null) ? (Literal) OmlRead.getPropertyValue(instance, property) : null;
