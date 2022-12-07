@@ -78,7 +78,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']"/>
         <target xmi:type="oml:Vocabulary" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph2.oml#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_hu2U4HD8Ee2UB41jLG9Agg" name="Computational-hypergraph3 Editor (Experimental)" repPath="#_hu1GwHD8Ee2UB41jLG9Agg" changeId="153b083e-b758-4f80-8a3e-c8291b03d1b7">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_hu2U4HD8Ee2UB41jLG9Agg" name="Computational-hypergraph3 Editor (Experimental)" repPath="#_hu1GwHD8Ee2UB41jLG9Agg" changeId="5194bedc-a096-47e3-ba4c-1e94ccc82a73">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']"/>
         <target xmi:type="oml:Vocabulary" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#/"/>
       </ownedRepresentationDescriptors>
@@ -3023,22 +3023,6 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iczADHD8Ee2UB41jLG9Agg" id="(0.41237113402061853,0.32682926829268294)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iczADXD8Ee2UB41jLG9Agg" id="(0.4740484429065744,0.6390243902439025)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_iczADnD8Ee2UB41jLG9Agg" type="4001" element="_icvVoHD8Ee2UB41jLG9Agg" source="_iczAAnD8Ee2UB41jLG9Agg" target="_icwjznD8Ee2UB41jLG9Agg">
-          <children xmi:type="notation:Node" xmi:id="_iczAEnD8Ee2UB41jLG9Agg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iczAE3D8Ee2UB41jLG9Agg" x="33" y="62"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_iczAFHD8Ee2UB41jLG9Agg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iczAFXD8Ee2UB41jLG9Agg" x="2"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_iczAFnD8Ee2UB41jLG9Agg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iczAF3D8Ee2UB41jLG9Agg" x="-44" y="24"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_iczAD3D8Ee2UB41jLG9Agg" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_iczAEHD8Ee2UB41jLG9Agg" fontName="Segoe UI"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iczAEXD8Ee2UB41jLG9Agg" points="[-80, 0, -35, 127]$[-80, -97, -35, 30]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ic01MHD8Ee2UB41jLG9Agg" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ic01MXD8Ee2UB41jLG9Agg" id="(0.5,0.5)"/>
-        </edges>
         <edges xmi:type="notation:Edge" xmi:id="_NJKHQHWyEe2UB41jLG9Agg" type="4001" element="_NJISIHWyEe2UB41jLG9Agg" source="_icwjx3D8Ee2UB41jLG9Agg" target="_icwjwHD8Ee2UB41jLG9Agg">
           <children xmi:type="notation:Node" xmi:id="_NJKHRHWyEe2UB41jLG9Agg" type="6001">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NJKHRXWyEe2UB41jLG9Agg" x="112" y="-19"/>
@@ -3055,21 +3039,37 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NJKuVHWyEe2UB41jLG9Agg" id="(0.5,0.6463414634146342)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NJKuVXWyEe2UB41jLG9Agg" id="(0.5,0.5)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_NJKuVnWyEe2UB41jLG9Agg" type="4001" element="_NJJgMnWyEe2UB41jLG9Agg" source="_NJKHQHWyEe2UB41jLG9Agg" target="_icwjznD8Ee2UB41jLG9Agg">
-          <children xmi:type="notation:Node" xmi:id="_NJKuWnWyEe2UB41jLG9Agg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NJKuW3WyEe2UB41jLG9Agg" x="3" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_h8Jy0HZnEe2lFcYXvxhIyQ" type="4001" element="_h8FhYHZnEe2lFcYXvxhIyQ" source="_iczAAnD8Ee2UB41jLG9Agg" target="_icwjznD8Ee2UB41jLG9Agg">
+          <children xmi:type="notation:Node" xmi:id="_h8Jy1HZnEe2lFcYXvxhIyQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h8Jy1XZnEe2lFcYXvxhIyQ" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_NJKuXHWyEe2UB41jLG9Agg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NJKuXXWyEe2UB41jLG9Agg" x="-1"/>
+          <children xmi:type="notation:Node" xmi:id="_h8Jy1nZnEe2lFcYXvxhIyQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h8Jy13ZnEe2lFcYXvxhIyQ" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_NJKuXnWyEe2UB41jLG9Agg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NJKuX3WyEe2UB41jLG9Agg" x="23" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_h8Jy2HZnEe2lFcYXvxhIyQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h8Jy2XZnEe2lFcYXvxhIyQ" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_NJKuV3WyEe2UB41jLG9Agg" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_NJKuWHWyEe2UB41jLG9Agg" fontName="Segoe UI"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NJKuWXWyEe2UB41jLG9Agg" points="[-21, 0, 24, 205]$[-21, -175, 24, 30]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NJL8cHWyEe2UB41jLG9Agg" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NJL8cXWyEe2UB41jLG9Agg" id="(0.5,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_h8Jy0XZnEe2lFcYXvxhIyQ" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_h8Jy0nZnEe2lFcYXvxhIyQ" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_h8Jy03ZnEe2lFcYXvxhIyQ" points="[-98, 0, 126, 236]$[-161, 0, 63, 236]$[-161, -236, 63, 0]$[-224, -236, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h8NdMHZnEe2lFcYXvxhIyQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h8NdMXZnEe2lFcYXvxhIyQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_h8NdMnZnEe2lFcYXvxhIyQ" type="4001" element="_h8GIcXZnEe2lFcYXvxhIyQ" source="_NJKHQHWyEe2UB41jLG9Agg" target="_icwjznD8Ee2UB41jLG9Agg">
+          <children xmi:type="notation:Node" xmi:id="_h8OEQHZnEe2lFcYXvxhIyQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h8OEQXZnEe2lFcYXvxhIyQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h8OEQnZnEe2lFcYXvxhIyQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h8OEQ3ZnEe2lFcYXvxhIyQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h8OERHZnEe2lFcYXvxhIyQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h8OERXZnEe2lFcYXvxhIyQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_h8NdM3ZnEe2lFcYXvxhIyQ" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_h8NdNHZnEe2lFcYXvxhIyQ" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_h8NdNXZnEe2lFcYXvxhIyQ" points="[-98, 0, 126, 236]$[-161, 0, 63, 236]$[-161, -236, 63, 0]$[-224, -236, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h8PSYHZnEe2lFcYXvxhIyQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h8PSYXZnEe2lFcYXvxhIyQ" id="(0.5,0.5)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -3106,7 +3106,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']/@defaultLayer/@containerMappings[name='Concept']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_icrEMnD8Ee2UB41jLG9Agg" name="InputEdge" tooltipText="InputEdge" incomingEdges="_icvVoHD8Ee2UB41jLG9Agg _NJJgMnWyEe2UB41jLG9Agg">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_icrEMnD8Ee2UB41jLG9Agg" name="InputEdge" tooltipText="InputEdge" incomingEdges="_h8FhYHZnEe2lFcYXvxhIyQ _h8GIcXZnEe2lFcYXvxhIyQ">
       <target xmi:type="oml:Aspect" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#InputEdge"/>
       <semanticElements xmi:type="oml:Aspect" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#InputEdge"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3136,7 +3136,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']/@defaultLayer/@edgeMappings[name='RelationEntity']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_icuumXD8Ee2UB41jLG9Agg" name="variableInput" outgoingEdges="_icvVoHD8Ee2UB41jLG9Agg" sourceNode="_icqdIHD8Ee2UB41jLG9Agg" targetNode="_icpPAHD8Ee2UB41jLG9Agg" beginLabel="0..1" endLabel="0..1">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_icuumXD8Ee2UB41jLG9Agg" name="variableInput" outgoingEdges="_h8FhYHZnEe2lFcYXvxhIyQ" sourceNode="_icqdIHD8Ee2UB41jLG9Agg" targetNode="_icpPAHD8Ee2UB41jLG9Agg" beginLabel="0..1" endLabel="0..1">
       <target xmi:type="oml:RelationEntity" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#VariableInputEdge"/>
       <semanticElements xmi:type="oml:RelationEntity" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#VariableInputEdge"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_icuumnD8Ee2UB41jLG9Agg" size="2" routingStyle="manhattan" strokeColor="209,209,209">
@@ -3147,15 +3147,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']/@defaultLayer/@edgeMappings[name='RelationEntity']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_icvVoHD8Ee2UB41jLG9Agg" sourceNode="_icuumXD8Ee2UB41jLG9Agg" targetNode="_icrEMnD8Ee2UB41jLG9Agg">
-      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#//@ownedStatements.4/@ownedSpecializations.0"/>
-      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#//@ownedStatements.4/@ownedSpecializations.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_icvVoXD8Ee2UB41jLG9Agg" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan" strokeColor="209,209,209">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_NJISIHWyEe2UB41jLG9Agg" name="triangleInput" outgoingEdges="_NJJgMnWyEe2UB41jLG9Agg" sourceNode="_icqdIHD8Ee2UB41jLG9Agg" targetNode="_icpPAHD8Ee2UB41jLG9Agg" beginLabel="0..1" endLabel="0..1">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_NJISIHWyEe2UB41jLG9Agg" name="triangleInput" outgoingEdges="_h8GIcXZnEe2lFcYXvxhIyQ" sourceNode="_icqdIHD8Ee2UB41jLG9Agg" targetNode="_icpPAHD8Ee2UB41jLG9Agg" beginLabel="0..1" endLabel="0..1">
       <target xmi:type="oml:RelationEntity" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#TriangleInputEdge"/>
       <semanticElements xmi:type="oml:RelationEntity" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#TriangleInputEdge"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_NJISIXWyEe2UB41jLG9Agg" size="2" routingStyle="manhattan" strokeColor="209,209,209">
@@ -3166,10 +3158,18 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']/@defaultLayer/@edgeMappings[name='RelationEntity']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_NJJgMnWyEe2UB41jLG9Agg" sourceNode="_NJISIHWyEe2UB41jLG9Agg" targetNode="_icrEMnD8Ee2UB41jLG9Agg">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_h8FhYHZnEe2lFcYXvxhIyQ" sourceNode="_icuumXD8Ee2UB41jLG9Agg" targetNode="_icrEMnD8Ee2UB41jLG9Agg">
       <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#//@ownedStatements.5/@ownedSpecializations.0"/>
       <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#//@ownedStatements.5/@ownedSpecializations.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_NJJgM3WyEe2UB41jLG9Agg" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan" strokeColor="209,209,209">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_h8FhYXZnEe2lFcYXvxhIyQ" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_h8GIcXZnEe2lFcYXvxhIyQ" sourceNode="_NJISIHWyEe2UB41jLG9Agg" targetNode="_icrEMnD8Ee2UB41jLG9Agg">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#//@ownedStatements.6/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph3.oml#//@ownedStatements.6/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_h8GIcnZnEe2lFcYXvxhIyQ" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Editor']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
