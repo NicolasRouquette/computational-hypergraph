@@ -1,0 +1,30 @@
+vocabulary <http://caltech.edu/discipline/computational-hypergraph/base#> as base {
+
+	aspect Container
+	
+	aspect ContainedElement
+	
+	relation entity Contains [
+		from Container
+		to ContainedElement
+		forward contains
+		reverse isContainedBy
+		inverse functional
+		asymmetric
+		irreflexive
+	]
+
+	aspect Aggregator
+	
+	aspect AggregatedElement
+	
+	relation entity Aggregates [
+		from Aggregator
+		to AggregatedElement
+		forward aggregates
+		reverse isAggregatedBy
+		asymmetric
+		irreflexive
+	]
+
+}

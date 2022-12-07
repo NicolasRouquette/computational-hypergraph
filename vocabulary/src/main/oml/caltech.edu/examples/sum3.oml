@@ -1,0 +1,39 @@
+description <http://caltech.edu/examples/sum3#> as sum3 {
+	
+	uses <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph3#> as ch
+	
+	ci xi : ch:Variable
+	
+	ci xt : ch:Triangle [
+		ch:mappingFunction "Sigma"
+	]
+	
+	ri xi_xt : ch:VariableInputEdge [
+		from xi
+		to xt
+		ch:index 1
+	]
+	
+	ci xk : ch:Variable
+	
+	ri xk_xt : ch:VariableInputEdge [
+		from xk
+		to xt
+		ch:index 2
+	]
+	
+	ci xl : ch:Variable
+	
+	ri xl_xj : ch:VariableInputEdge [
+		from xl
+		to xt
+		ch:index 3
+	]
+	
+	ci xj : ch:Variable
+	
+	ri xt_xj : ch:OutputEdge [
+		from xt
+		to xj
+	]
+}
