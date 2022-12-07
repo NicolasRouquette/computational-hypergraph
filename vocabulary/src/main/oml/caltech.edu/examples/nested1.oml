@@ -9,6 +9,7 @@ description <http://caltech.edu/examples/nested1#> as nested1 {
 		base:contains ni
 		base:contains nk
 		base:contains nl
+		base:contains nj
 		
 		base:contains nik
 		base:contains nikl
@@ -45,10 +46,68 @@ description <http://caltech.edu/examples/nested1#> as nested1 {
 		to xj
 	]
 	
-	ci ni : ch:Variable 
+	ci ni : ch:Variable
 	ci nk : ch:Variable 
 	ci nl : ch:Variable 
 	
-	ci nik : ch:Variable 
-	ci nikl : ch:Variable 
+	ci nik : ch:Triangle [
+		ch:mappingFunction "F(i,k)"
+	]
+	
+	ri ni_nik : ch:VariableInputEdge [
+		from ni
+		to nik
+		ch:index 1
+	]
+	
+	ri nk_nik : ch:VariableInputEdge [
+		from nk
+		to nik
+		ch:index 2
+	]
+	
+	ci nikl : ch:Triangle  [
+		ch:mappingFunction "F(ik,l)"
+	]
+	
+	
+	ri nik_nikl : ch:TriangleInputEdge [
+		from nik
+		to nikl
+		ch:index 1
+	]
+	
+	ri nl_nikl : ch:VariableInputEdge [
+		from nl
+		to nikl
+		ch:index 2
+	]
+	
+	ci nj : ch:Variable 
+	
+	ri nikl_nj : ch:OutputEdge [
+		from nikl
+		to nj
+	]
+	
+	ri xi_ni : ch:Corresponds [
+		from ni
+		to xi
+	]
+	
+	ri xj_nj : ch:Corresponds [
+		from nj
+		to xj
+	]
+	
+	ri xk_nk : ch:Corresponds [
+		from nk
+		to xk
+	]
+	
+	ri xl_nl : ch:Corresponds [
+		from nl
+		to xl
+	]
+	
 }

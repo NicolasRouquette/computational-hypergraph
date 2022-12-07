@@ -145,6 +145,19 @@ public class OmlServices {
 		return instances;
 	}
 
+    public static List<NamedInstance> getOwnedRootNamedInstancesOfKind(Description description, String kindName) {
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
+    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
+		
+    	return description.getOwnedStatements().stream()
+    			.filter(i -> 
+    			i instanceof NamedInstance && 
+    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
+    			OmlSearch.findInstancesRelatedTo((NamedInstance) i, bContains).isEmpty())
+    			.map(i -> (NamedInstance)i)
+    			.collect(Collectors.toList());
+    }
+    
     public static List<NamedInstance> getOwnedNamedInstances(Description description) {
     	return description.getOwnedStatements().stream()
     			.filter(i -> i instanceof NamedInstance)

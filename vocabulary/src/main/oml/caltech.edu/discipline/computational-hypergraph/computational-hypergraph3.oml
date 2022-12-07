@@ -42,7 +42,7 @@ vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational
 	
 	@rdfs:label "TriangleInputEdge"
 	relation entity TriangleInputEdge :> InputEdge [
-		from Variable
+		from Triangle
 		to Triangle
 		forward triangleInput
 		functional
@@ -62,6 +62,16 @@ vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational
 		domain Triangle
 		range xsd:string
 		functional
+	]
+	
+	
+	@rdfs:label "Corresponds"
+	relation entity Corresponds :> HypergraphElement [
+		from Variable
+		to Variable
+		forward corresponds
+		functional
+		inverse functional
 	]
 	
 }
