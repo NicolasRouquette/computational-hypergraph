@@ -12,7 +12,10 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius.common.acceleo.aql,
  org.eclipse.ui.ide,
  org.eclipse.xtext.ui,
- io.opencaesar.oml;bundle-version="1.0.6"
+ io.opencaesar.oml;bundle-version="1.0.6",
+ org.eclipse.sirius.common;bundle-version="7.0.5",
+ org.eclipse.sirius.diagram;bundle-version="7.0.5",
+ org.eclipse.sirius.diagram.model;bundle-version="7.0.5"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-Vendor: %providerName

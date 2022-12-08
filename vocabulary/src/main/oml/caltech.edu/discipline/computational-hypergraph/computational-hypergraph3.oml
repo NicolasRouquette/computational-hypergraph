@@ -64,14 +64,4 @@ vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational
 		functional
 	]
 	
-	
-	@rdfs:label "Corresponds"
-	relation entity Corresponds :> HypergraphElement [
-		from Variable
-		to Variable
-		forward corresponds
-		functional
-		inverse functional
-	]
-	
 }
