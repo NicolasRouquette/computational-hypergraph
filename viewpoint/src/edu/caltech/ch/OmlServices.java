@@ -32,6 +32,7 @@ import io.opencaesar.oml.util.OmlSwitch;
  */
 public class OmlServices {
     
+    
     public static boolean isKindOf(NamedInstance instance, String kindName) {
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), kindName);
 		return (kind != null) ? OmlSearch.findIsKindOf(instance, kind) : true;
@@ -145,6 +146,20 @@ public class OmlServices {
 		return instances;
 	}
 
+	// Fix for OmlSearch.findInstancesRelatedTo
+    public static List<NamedInstance> findInstancesRelatedTo(NamedInstance target, Relation relation) {
+        final List<NamedInstance> sources = new ArrayList<>();
+        sources.addAll(OmlSearch.findLinkAssertionsWithTarget(target).stream()
+                .filter(a -> a.getRelation() == relation)
+                .map(a -> OmlRead.getSource(a))
+                .collect(Collectors.toList()));
+        sources.addAll(OmlSearch.findRelationInstancesWithTarget(target).stream()
+                .filter(i -> OmlSearch.findTypes(i).stream().filter(t -> ((RelationEntity)t).getForwardRelation() == relation).findFirst().isPresent())
+                .flatMap(i -> i.getSources().stream())
+                .collect(Collectors.toList()));
+        return sources;
+    }
+    
     public static List<NamedInstance> getOwnedRootNamedInstancesOfKind(Description description, String kindName) {
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
     	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
@@ -153,7 +168,34 @@ public class OmlServices {
     			.filter(i -> 
     			i instanceof NamedInstance && 
     			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
-    			OmlSearch.findInstancesRelatedTo((NamedInstance) i, bContains).isEmpty())
+    			findInstancesRelatedTo((NamedInstance) i, bContains).isEmpty())
+    			.map(i -> (NamedInstance)i)
+    			.collect(Collectors.toList());
+    }
+
+    
+    public static List<NamedInstance> getOwnedNamedInstancesOfKind(NamedInstance parent, String kindName) {
+    	var description = (Description) parent.getOntology();
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description, kindName);
+    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description, "base:contains");
+    	return description.getOwnedStatements().stream()
+    			.filter(i -> 
+    			i instanceof NamedInstance && 
+    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
+    			findInstancesRelatedTo((NamedInstance) i, bContains).contains(parent))
+    			.map(i -> (NamedInstance)i)
+    			.collect(Collectors.toList());
+    }
+
+    public static List<NamedInstance> getInputNamedInstancesOfKind(NamedInstance parent, String kindName, String inputName) {
+    	var description = (Description) parent.getOntology();
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description, kindName);
+    	var input = (Relation) OmlRead.getMemberByAbbreviatedIri(description, inputName);
+    	return description.getOwnedStatements().stream()
+    			.filter(i -> 
+    			i instanceof NamedInstance && 
+    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
+    			OmlSearch.findInstancesRelatedFrom((NamedInstance) parent, input).contains(i))
     			.map(i -> (NamedInstance)i)
     			.collect(Collectors.toList());
     }
