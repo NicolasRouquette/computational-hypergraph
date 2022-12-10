@@ -6,8 +6,8 @@ description = 'This is the Computational Hypergraph vocabulary'
 group = 'caltech.edu'
 version = '1.0.0'
 
-/* 
- * The Gradle plugins 
+/*
+ * The Gradle plugins
  */
 apply plugin: 'maven-publish'
 
@@ -147,15 +147,18 @@ task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn:
 /*
  * A task to build the project, which executes several tasks together
  */
-task build(group: "oml", dependsOn: owlReason) {
-}
-
-/*
- * A task to delete the build artifacts
- */
-task clean(group: "oml")  {
-    delete file('build')
-}
+//tasks.named('build') {
+//    group "oml"
+//    dependsOn owlReason
+//}
+//
+///*
+// * A task to delete the build artifacts
+// */
+//tasks.named('clean') {
+//    group "oml"
+//    delete file('build')
+//}
 
 /*
  * Publish artifact to maven
@@ -167,6 +170,10 @@ task omlZip(type: Zip, group:"oml") {
     archiveBaseName = project.name
     archiveVersion = project.version
 }
+
+//artifacts.default omlZip
+
+publishToMavenLocal.dependsOn omlZip
 
 def pomConfig = {
     licenses {
@@ -214,7 +221,7 @@ publishing {
                     }
                     root.appendNode('name', project.ext.title)
                     root.appendNode('description', project.description)
-                    root.appendNode('url', 'https://github.com/opencaesar/'+rootProject.name)
+                    root.appendNode('url', 'https://github.com/NicolasRouquette/computational-hypergraphs')
                     root.children().last() + pomConfig
                 }
             }
