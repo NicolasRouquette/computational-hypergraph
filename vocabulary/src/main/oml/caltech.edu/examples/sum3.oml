@@ -1,6 +1,6 @@
 description <http://caltech.edu/examples/sum3#> as sum3 {
 	
-	uses <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph3#> as ch
+	uses <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph#> as ch
 	
 	ci xi : ch:Variable
 	

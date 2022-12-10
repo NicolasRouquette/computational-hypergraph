@@ -5,53 +5,61 @@
 @dc:rights '''Copyright 2022, by the California Institute of Technology. ALL RIGHTS RESERVED. United States Government Sponsorship acknowledged. Any commercial use must be negotiated with the Office of Technology Transfer at the California Institute of Technology.
 
 This software may be subject to U.S. export control laws. By accepting this software, the user agrees to comply with all applicable U.S. export laws and regulations. User has the responsibility to obtain export licenses, or other export authority as may be required before exporting such information to foreign countries or providing access to foreign persons.'''
-vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph1#> as computational-hypergraph1 {
+vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph#> as computational-hypergraph {
 	
 	extends <http://purl.org/dc/elements/1.1/> as dc
 	extends <http://www.w3.org/2001/XMLSchema#> as xsd
 	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 	
+	extends <http://caltech.edu/discipline/computational-hypergraph/base#> as base
+	
+	aspect HypergraphElement :> base:ContainedElement
+	
 	@rdfs:label "Variable"
-	@rdfs:comment "Corresponds to $\V$"
-	concept Variable
+	concept Variable :> HypergraphElement
 	
-	@rdfs:label "Square Variable"
-	@rdfs:comment "Corresponds to $\V_{\square}$"
-	concept SquareVariable :> Variable
+	@rdfs:label "Triangle"
+	concept Triangle :> HypergraphElement, base:Container [
+		restricts all relation base:contains to HypergraphElement
+	]
 	
-	@rdfs:label "Circle Variable"
-	@rdfs:comment "Corresponds to $\V_{\circle}$"
-	concept CircleVariable :> Variable
+	aspect InputEdge :> HypergraphElement
 	
-	@rdfs:label "Edge"
-	@rdfs:comment "Corresponds to $\CE$"
-	relation entity Edge [
+	scalar property index [
+		domain InputEdge
+		range xsd:int
+		functional
+	]
+	
+	@rdfs:label "VariableInputEdge"
+	relation entity VariableInputEdge :> InputEdge [
 		from Variable
-		to Variable
-		forward edge
+		to Triangle
+		forward variableInput
 		functional
 		inverse functional
 	]
 	
-	relation entity AggregationEdge :> Edge [
-		from Variable
-		to CircleVariable
-		forward aggregation
+	@rdfs:label "TriangleInputEdge"
+	relation entity TriangleInputEdge :> InputEdge [
+		from Triangle
+		to Triangle
+		forward triangleInput
+		functional
+		inverse functional
 	]
 	
-	scalar property index [
-		domain AggregationEdge
-		range xsd:int
-	]
-	
-	relation entity MappingEdge :> Edge [
-		from Variable
-		to SquareVariable
-		forward mapping
+	@rdfs:label "OutputEdge"
+	relation entity OutputEdge :> HypergraphElement [
+		from Triangle
+		to Variable
+		forward output
+		functional
+		inverse functional
 	]
 	
 	scalar property mappingFunction [
-		domain MappingEdge
+		domain Triangle
 		range xsd:string
 		functional
 	]

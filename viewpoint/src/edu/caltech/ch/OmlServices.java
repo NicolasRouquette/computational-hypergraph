@@ -32,7 +32,6 @@ import io.opencaesar.oml.util.OmlSwitch;
  */
 public class OmlServices {
     
-    
     public static boolean isKindOf(NamedInstance instance, String kindName) {
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), kindName);
 		return (kind != null) ? OmlSearch.findIsKindOf(instance, kind) : true;
@@ -191,13 +190,36 @@ public class OmlServices {
     	var description = (Description) parent.getOntology();
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description, kindName);
     	var input = (Relation) OmlRead.getMemberByAbbreviatedIri(description, inputName);
-    	return description.getOwnedStatements().stream()
+    	List<NamedInstance> candidates = description.getOwnedStatements().stream()
     			.filter(i -> 
     			i instanceof NamedInstance && 
-    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
-    			OmlSearch.findInstancesRelatedFrom((NamedInstance) parent, input).contains(i))
+    			OmlSearch.findIsTypeOf((NamedInstance) i, kind))
+    			.map(i -> 
+    				(NamedInstance)i)
+    			.collect(Collectors.toList());
+    	List<NamedInstance> inputs = candidates
+    			.stream()
+    			.filter(i -> OmlSearch.findInstancesRelatedFrom((NamedInstance) i, input).contains(parent))
+    			.collect(Collectors.toList());
+    	return inputs;
+    }
+    
+
+    public static List<NamedInstance> getOutputNamedInstancesOfKind(NamedInstance parent, String kindName, String outputName) {
+    	var description = (Description) parent.getOntology();
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description, kindName);
+    	var output = (Relation) OmlRead.getMemberByAbbreviatedIri(description, outputName);
+    	List<NamedInstance> candidates = description.getOwnedStatements().stream()
+    			.filter(i -> 
+    			i instanceof NamedInstance && 
+    			OmlSearch.findIsTypeOf((NamedInstance) i, kind))
     			.map(i -> (NamedInstance)i)
     			.collect(Collectors.toList());
+    	List<NamedInstance> outputs = candidates
+    			.stream()
+    			.filter(i -> OmlSearch.findInstancesRelatedFrom(parent, output).contains(i))
+    			.collect(Collectors.toList());
+    	return outputs;
     }
     
     public static List<NamedInstance> getOwnedNamedInstances(Description description) {
