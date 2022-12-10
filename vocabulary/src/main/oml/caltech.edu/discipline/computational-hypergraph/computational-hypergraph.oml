@@ -45,7 +45,7 @@ vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational
 	relation entity TriangleInputEdge :> InputEdge [
 		from Triangle
 		to Triangle
-		forward triangleInput
+		forward outputToTriangle
 		reverse inputFromTriangle
 		functional
 		inverse functional
