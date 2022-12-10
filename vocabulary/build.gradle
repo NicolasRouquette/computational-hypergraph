@@ -147,24 +147,24 @@ task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn:
 /*
  * A task to build the project, which executes several tasks together
  */
-//tasks.named('build') {
-//    group "oml"
-//    dependsOn owlReason
-//}
-//
-///*
-// * A task to delete the build artifacts
-// */
-//tasks.named('clean') {
-//    group "oml"
-//    delete file('build')
-//}
+tasks.named('build') {
+   group "oml"
+   dependsOn owlReason
+}
+
+/*
+* A task to delete the build artifacts
+*/
+tasks.named('clean') {
+   group "oml"
+   delete file('build')
+}
 
 /*
  * Publish artifact to maven
  */
 task omlZip(type: Zip, group:"oml") {
-    from file('src/oml')
+    from file('src/main/oml')
     include "**/*.oml"
     destinationDirectory = file('build/libs')
     archiveBaseName = project.name
