@@ -3,7 +3,7 @@
  */
 ext.title = 'Computational Hypergraph Vocabulary'
 description = 'This is the Computational Hypergraph vocabulary'
-group = 'caltech.edu'
+group = 'edu.caltech'
 version = '1.0.0'
 
 /*
