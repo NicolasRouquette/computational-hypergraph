@@ -16,7 +16,9 @@ vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational
 	aspect HypergraphElement :> base:ContainedElement
 	
 	@rdfs:label "Variable"
-	concept Variable :> HypergraphElement
+	concept Variable :> HypergraphElement, base:Container, base:ContainedElement [
+	  restricts all relation base:contains to Variable
+	]
 	
 	@rdfs:label "Triangle"
 	concept Triangle :> HypergraphElement, base:Container [

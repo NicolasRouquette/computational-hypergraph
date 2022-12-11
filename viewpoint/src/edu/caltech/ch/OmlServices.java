@@ -102,6 +102,18 @@ public class OmlServices {
 		return !instance.getTargets().isEmpty() ? instance.getTargets().get(0) : null;
 	}
 
+    public static List<NamedInstance> getRelatedSourcesViaRelationInverseOf(NamedInstance instance, String relationyName) {
+    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), relationyName);
+    	final List<NamedInstance> targets = new ArrayList<>();
+    	targets.addAll(
+    			OmlSearch
+    			.findLinkAssertionsWithTarget(instance).stream()
+    			.filter(l -> l.getRelation() == relation)
+    			.map(l -> OmlRead.getSource(l))
+    			.collect(Collectors.toList()));
+		return targets;
+    }
+    
     public static List<NamedInstance> getRelatedTargets(NamedInstance instance, String relationyName) {
     	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), relationyName);
 		return (relation != null) ? OmlSearch.findInstancesRelatedFrom(instance, relation) : Collections.emptyList();
@@ -172,6 +184,33 @@ public class OmlServices {
     			.collect(Collectors.toList());
     }
 
+    public static List<NamedInstance> getRootNonContainerNamedInstancesOfKind(Description description, String kindName) {
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
+    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
+		
+    	return description.getOwnedStatements().stream()
+    			.filter(i -> 
+    			i instanceof NamedInstance && 
+    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
+    			findInstancesRelatedTo((NamedInstance) i, bContains).isEmpty() &&
+    			OmlSearch.findInstancesRelatedFrom((NamedInstance) i, bContains).isEmpty())
+    			.map(i -> (NamedInstance)i)
+    			.collect(Collectors.toList());
+    }
+
+    public static List<NamedInstance> getContainerNamedInstancesOfKind(Description description, String kindName) {
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
+    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
+		
+    	return description.getOwnedStatements().stream()
+    			.filter(i -> 
+    			i instanceof NamedInstance && 
+    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
+    			findInstancesRelatedTo((NamedInstance) i, bContains).isEmpty() &&
+    			!OmlSearch.findInstancesRelatedFrom((NamedInstance) i, bContains).isEmpty())
+    			.map(i -> (NamedInstance)i)
+    			.collect(Collectors.toList());
+    }
     
     public static List<NamedInstance> getOwnedNamedInstancesOfKind(NamedInstance parent, String kindName) {
     	var description = (Description) parent.getOntology();
