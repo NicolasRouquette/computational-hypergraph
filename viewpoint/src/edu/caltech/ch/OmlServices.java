@@ -14,6 +14,7 @@ import io.opencaesar.oml.ConceptInstance;
 import io.opencaesar.oml.ConceptInstanceReference;
 import io.opencaesar.oml.Description;
 import io.opencaesar.oml.DescriptionStatement;
+import io.opencaesar.oml.Element;
 import io.opencaesar.oml.IdentifiedElement;
 import io.opencaesar.oml.LinkAssertion;
 import io.opencaesar.oml.Literal;
@@ -71,12 +72,12 @@ public class OmlServices {
 	}
 	
     public static boolean isKindOf(NamedInstance instance, String kindName) {
-    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), kindName);
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), kindName);
 		return (kind != null) ? OmlSearch.findIsKindOf(instance, kind) : true;
 	}
 
     public static boolean isTypeOf(NamedInstance instance, String kindName) {
-    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), kindName);
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), kindName);
 		return (kind != null) ? OmlSearch.findIsTypeOf(instance, kind) : false;
 	}
 
@@ -86,32 +87,32 @@ public class OmlServices {
 	}
 
     public static String getAnnotationValue(NamedInstance instance, String propertyName) {
-    	var property = (AnnotationProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), propertyName);
+    	var property = (AnnotationProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), propertyName);
 		var literal = (property != null) ? OmlRead.getAnnotationValue(instance, property) : null;
 		return (literal != null) ? OmlRead.getStringValue(literal) : null;
 	}
 
     public static boolean hasAnnotationValue(NamedInstance instance, String propertyName) {
-    	var property = (AnnotationProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), propertyName);
+    	var property = (AnnotationProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), propertyName);
 		var literal = (property != null) ? OmlRead.getAnnotationValue(instance, property) : null;
 		return literal != null;
 	}
 
 
     public static String getScalarValueIfAny(NamedInstance instance, String prefix, String propertyName) {
-    	var property = (ScalarProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), propertyName);
+    	var property = (ScalarProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), propertyName);
 		var literal = (property != null) ? (Literal) OmlRead.getPropertyValue(instance, property) : null;
 		return (literal != null) ? prefix+OmlRead.getStringValue(literal) : null;
 	}
     
     public static String getScalarValue(NamedInstance instance, String propertyName) {
-    	var property = (ScalarProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), propertyName);
+    	var property = (ScalarProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), propertyName);
 		var literal = (property != null) ? (Literal) OmlRead.getPropertyValue(instance, property) : null;
 		return (literal != null) ? OmlRead.getStringValue(literal) : null;
 	}
 
     public static boolean hasScalarValue(NamedInstance instance, String propertyName) {
-    	var property = (ScalarProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), propertyName);
+    	var property = (ScalarProperty) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), propertyName);
 		var literal = (property != null) ? (Literal) OmlRead.getPropertyValue(instance, property) : null;
 		return literal != null;
 	}
@@ -141,7 +142,7 @@ public class OmlServices {
 	}
 
     public static List<NamedInstance> getRelatedSourcesViaRelationInverseOf(NamedInstance instance, String relationyName) {
-    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), relationyName);
+    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), relationyName);
     	final List<NamedInstance> targets = new ArrayList<>();
     	targets.addAll(
     			OmlSearch
@@ -153,22 +154,22 @@ public class OmlServices {
     }
     
     public static List<NamedInstance> getRelatedTargets(NamedInstance instance, String relationyName) {
-    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), relationyName);
+    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), relationyName);
 		return (relation != null) ? OmlSearch.findInstancesRelatedFrom(instance, relation) : Collections.emptyList();
 	}
 
     public static List<NamedInstance> getAllRelatedTargets(NamedInstance instance, String relationyName) {
-    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), relationyName);
+    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), relationyName);
 		return (relation != null) ? OmlRead.closure(instance, true, i -> OmlSearch.findInstancesRelatedFrom(i, relation)) : Collections.emptyList();
     }
     
     public static List<NamedInstance> getRelatedSources(NamedInstance instance, String relationyName) {
-    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), relationyName);
+    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), relationyName);
 		return (relation != null) ? OmlSearch.findInstancesRelatedTo(instance, relation) : Collections.emptyList();
 	}
 
     public static List<NamedInstance> getAllRelatedSources(NamedInstance instance, String relationyName) {
-    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), relationyName);
+    	var relation = (Relation) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), relationyName);
 		return (relation != null) ? OmlRead.closure(instance, true, i -> OmlSearch.findInstancesRelatedTo(i, relation)) : Collections.emptyList();
     }
 
@@ -182,14 +183,14 @@ public class OmlServices {
     }
     
     public static List<RelationInstance> getRelationInstancesWithSource(NamedInstance instance, String relationyEntityName) {
-    	final var relationEntity = (RelationEntity) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), relationyEntityName);
+    	final var relationEntity = (RelationEntity) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), relationyEntityName);
 		List<RelationInstance> instances = OmlSearch.findRelationInstancesWithSource(instance);
 		instances.removeIf(i -> !OmlSearch.findTypes(i).contains(relationEntity));
 		return instances;
 	}
 
     public static List<RelationInstance> getRelationInstancesWithTarget(NamedInstance instance, String relationyEntityName) {
-    	final var relationEntity = (RelationEntity) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), relationyEntityName);
+    	final var relationEntity = (RelationEntity) OmlRead.getMemberByAbbreviatedIri(instance.getOntology().eResource().getResourceSet(), relationyEntityName);
 		List<RelationInstance> instances = OmlSearch.findRelationInstancesWithTarget(instance);
 		instances.removeIf(i -> !OmlSearch.findTypes(i).contains(relationEntity));
 		return instances;
@@ -219,19 +220,20 @@ public class OmlServices {
     }
     
     public static Set<NamedInstance> getOwnedRootNamedInstancesOfKind(Description description, String kindName) {
-    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
-    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
-    	return getAllNamedInstances(description).stream()
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology().eResource().getResourceSet(), kindName);
+    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology().eResource().getResourceSet(), "base:contains");
+    	var result = getAllNamedInstances(description).stream()
     			.filter(i -> 
     			OmlSearch.findIsTypeOf(i, kind) &&
     			findInstancesRelatedTo(i, bContains).isEmpty() &&
     			OmlSearch.findInstancesRelatedFrom(i, bContains).isEmpty())
     			.collect(Collectors.toSet());
+    	return result;
     }
 
     public static Set<NamedInstance> getRootNonContainerNamedInstancesOfKind(Description description, String kindName) {
-    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
-    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology().eResource().getResourceSet(), kindName);
+    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology().eResource().getResourceSet(), "base:contains");
     	return getAllNamedInstances(description).stream()
     			.filter(i -> 
     			OmlSearch.findIsTypeOf(i, kind) &&
@@ -240,18 +242,20 @@ public class OmlServices {
     			.collect(Collectors.toSet());
     }
 
-    public static Set<NamedInstance> getContainerNamedInstancesOfKind(IdentifiedElement e, String kindName) {
+    public static Set<NamedInstance> getContainerNamedInstancesOfKind(Element e, String kindName) {
     	if (e instanceof Description) {
     		return getContainerNamedInstancesOfKind((Description) e, kindName);
     	} else if (e instanceof ConceptInstance) {
     		return getOwnedNamedInstancesOfKind((ConceptInstance) e, kindName);
+    	} else if (e instanceof ConceptInstanceReference) {
+    		return getOwnedNamedInstancesOfKind(((ConceptInstanceReference) e).getInstance(), kindName);
     	} else
     		return Collections.emptySet();
     }
     
     public static Set<NamedInstance> getContainerNamedInstancesOfKind(Description description, String kindName) {
-    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
-    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology().eResource().getResourceSet(), kindName);
+    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology().eResource().getResourceSet(), "base:contains");
     	return getAllNamedInstances(description).stream()
     			.filter(i -> 
     			OmlSearch.findIsTypeOf(i, kind) &&
@@ -262,8 +266,8 @@ public class OmlServices {
 
     public static Set<NamedInstance> getContainerNamedInstancesOfKind(ConceptInstance instance, String kindName) {
     	var description = (Description) instance.getOntology();
-    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
-    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology().eResource().getResourceSet(), kindName);
+    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology().eResource().getResourceSet(), "base:contains");
 		
     	return getAllNamedInstances(description).stream()
     			.filter(i -> 
@@ -274,8 +278,8 @@ public class OmlServices {
     }
     public static Set<NamedInstance> getOwnedNamedInstancesOfKind(NamedInstance parent, String kindName) {
     	var description = (Description) parent.getOntology();
-    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description, kindName);
-    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description, "base:contains");
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.eResource().getResourceSet(), kindName);
+    	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.eResource().getResourceSet(), "base:contains");
     	return getAllNamedInstances(description).stream()
     			.filter(i -> 
     			OmlSearch.findIsTypeOf(i, kind) &&
@@ -285,8 +289,8 @@ public class OmlServices {
 
     public static Set<NamedInstance> getInputNamedInstancesOfKind(NamedInstance parent, String kindName, String inputName) {
     	var description = (Description) parent.getOntology();
-    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description, kindName);
-    	var input = (Relation) OmlRead.getMemberByAbbreviatedIri(description, inputName);
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.eResource().getResourceSet(), kindName);
+    	var input = (Relation) OmlRead.getMemberByAbbreviatedIri(description.eResource().getResourceSet(), inputName);
     	Set<NamedInstance> candidates = getAllNamedInstances(description).stream()
     			.filter(i -> 
     			OmlSearch.findIsTypeOf(i, kind))
@@ -300,8 +304,8 @@ public class OmlServices {
     
     public static Set<NamedInstance> getOutputNamedInstancesOfKind(NamedInstance parent, String kindName, String outputName) {
     	var description = (Description) parent.getOntology();
-    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description, kindName);
-    	var output = (Relation) OmlRead.getMemberByAbbreviatedIri(description, outputName);
+    	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.eResource().getResourceSet(), kindName);
+    	var output = (Relation) OmlRead.getMemberByAbbreviatedIri(description.eResource().getResourceSet(), outputName);
     	Set<NamedInstance> candidates = getAllNamedInstances(description).stream()
     			.filter(i -> 
     			OmlSearch.findIsTypeOf(i, kind))

@@ -1,0 +1,5 @@
+vocabulary bundle <http://caltech.edu/bundle/imports/discipline/computational-hypergraph-bundle#> as computational-hypergraph-bundle {
+	
+	includes <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph#>
+	
+}

@@ -5,21 +5,21 @@
       <metamodel href="http://opencaesar.io/oml#/"/>
       <layout xsi:type="description_1:CustomLayoutConfiguration" id="org.eclipse.elk.layered" label="ELK Layered" description="Layer-based algorithm provided by the Eclipse Layout Kernel. Arranges as many edges as possible into one direction by placing nodes into subsequent layers. This implementation supports different routing styles (straight, orthogonal, splines); if orthogonal routing is selected, arbitrary port constraints are respected, thus enabling the layout of block diagrams such as actor-oriented models or circuit schematics. Furthermore, full layout of compound graphs with cross-hierarchy edges is supported when the respective option is activated on the top level."/>
       <defaultLayer name="Default">
-        <nodeMappings name="Variable" semanticCandidatesExpression="aql:self.getOwnedNamedInstancesOfKind('ch:Variable')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
+        <nodeMappings name="Variable" semanticCandidatesExpression="aql:self.getOwnedNamedInstancesOfKind('computational-hypergraph:Variable')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
           <style xsi:type="style:EllipseNodeDescription" labelSize="12" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Triangle" semanticCandidatesExpression="aql:self.getOwnedNamedInstancesOfKind('ch:Triangle')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
+        <nodeMappings name="Triangle" semanticCandidatesExpression="aql:self.getOwnedNamedInstancesOfKind('computational-hypergraph:Triangle')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql:self.name+self.getScalarValueIfAny('\nmapping function: ','ch:mappingFunction')" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="InputVariable" semanticCandidatesExpression="aql:self.getInputNamedInstancesOfKind('ch:Variable','ch:variableInput')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
+        <nodeMappings name="InputVariable" semanticCandidatesExpression="aql:self.getInputNamedInstancesOfKind('computational-hypergraph:Variable','computational-hypergraph:variableInput')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
           <borderedNodeMappings name="InputVariable" semanticCandidatesExpression="aql:self.getInputNamedInstancesOfKind('ch:Variable','ch:variableInput')" domainClass="oml.ConceptInstance">
             <style xsi:type="style:EllipseNodeDescription" borderLineStyle="dash_dot" labelSize="12" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -33,7 +33,7 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="OutputVariable" semanticCandidatesExpression="aql:self.getOutputNamedInstancesOfKind('ch:Variable','ch:output')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
+        <nodeMappings name="OutputVariable" semanticCandidatesExpression="aql:self.getOutputNamedInstancesOfKind('computational-hypergraph:Variable','computational-hypergraph:output')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
           <style xsi:type="style:EllipseNodeDescription" borderLineStyle="dash_dot" labelSize="12" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -83,14 +83,14 @@
         </layoutOptions>
       </layout>
       <defaultLayer name="Default">
-        <nodeMappings name="Triangle" semanticCandidatesExpression="aql:self.getOwnedRootNamedInstancesOfKind('ch:Triangle')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
+        <nodeMappings name="Triangle" semanticCandidatesExpression="aql:self.getOwnedRootNamedInstancesOfKind('computational-hypergraph:Triangle')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql:self.name+self.getScalarValueIfAny('\nmapping function: ','ch:mappingFunction')" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Variable" semanticCandidatesExpression="aql:self.getLeafNamedInstancesOfKind('ch:Variable')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
+        <nodeMappings name="Variable" semanticCandidatesExpression="aql:self.getLeafNamedInstancesOfKind('computational-hypergraph:Variable')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance">
           <style xsi:type="style:EllipseNodeDescription" labelSize="12" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -113,7 +113,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="variableInputEdge" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" sourceMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Variable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@containerMappings[name='ContainerVariable']" targetMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']" targetFinderExpression="aql:self.getRelatedSourcesViaRelationInverseOf('ch:inputFromVariable')">
+        <edgeMappings name="variableInputEdge" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" sourceMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Variable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@containerMappings[name='ContainerVariable']" targetMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']" targetFinderExpression="aql:self.getRelatedSourcesViaRelationInverseOf('computational-hypergraph:inputFromVariable')">
           <style sizeComputationExpression="2" centeredSourceMappings="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Variable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@containerMappings[name='ContainerVariable']" centeredTargetMappings="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -121,7 +121,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="triangleInputEdge" sourceMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']" targetMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']" targetFinderExpression="aql:self.getRelatedTargets('ch:outputToTriangle')">
+        <edgeMappings name="triangleInputEdge" sourceMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']" targetMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']" targetFinderExpression="aql:self.getRelatedTargets('computational-hypergraph:outputToTriangle')">
           <style sizeComputationExpression="2" centeredSourceMappings="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']" centeredTargetMappings="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -129,7 +129,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="outputEdge" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" sourceMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']" targetMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@containerMappings[name='ContainerVariable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Variable']" targetFinderExpression="aql:self.getRelatedTargets('ch:output')">
+        <edgeMappings name="outputEdge" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" sourceMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']" targetMapping="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@containerMappings[name='ContainerVariable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Variable']" targetFinderExpression="aql:self.getRelatedTargets('computational-hypergraph:output')">
           <style sizeComputationExpression="2" centeredSourceMappings="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Triangle']" centeredTargetMappings="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Variable'] //@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@containerMappings[name='ContainerVariable']">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -137,7 +137,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="ContainerVariable" semanticCandidatesExpression="aql:self.getContainerNamedInstancesOfKind('ch:Variable')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance" reusedNodeMappings="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Variable']">
+        <containerMappings name="ContainerVariable" semanticCandidatesExpression="aql:self.getContainerNamedInstancesOfKind('computational-hypergraph:Variable')" doubleClickDescription="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Nested%20Hypergraph']/@toolSection/@ownedTools[name='']" domainClass="oml.ConceptInstance" reusedNodeMappings="//@ownedViewpoints[name='Computational%20Hypergraph']/@ownedRepresentations[name='Toplevel%20Hypergraph']/@defaultLayer/@nodeMappings[name='Variable']">
           <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
