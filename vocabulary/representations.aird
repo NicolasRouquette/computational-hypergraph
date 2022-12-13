@@ -7,13 +7,21 @@
     <semanticResources>src/main/oml/caltech.edu/examples/sum3.oml</semanticResources>
     <semanticResources>src/main/oml/caltech.edu/examples/pi2.oml</semanticResources>
     <semanticResources>src/main/oml/caltech.edu/examples/pi1.oml</semanticResources>
-    <semanticResources>src/main/oml/caltech.edu/discipline/computational-hypergraph/base.oml</semanticResources>
     <semanticResources>src/main/oml/caltech.edu/examples/nested1.oml</semanticResources>
     <semanticResources>src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph.oml</semanticResources>
+    <semanticResources>src/main/oml/caltech.edu/bundle/imports/discipline/computational-hypergraph-bundle.oml</semanticResources>
+    <semanticResources>build/oml/opencaesar.io/services/cprov.oml</semanticResources>
     <semanticResources>build/oml/purl.org/dc/elements/1.1.oml</semanticResources>
     <semanticResources>build/oml/www.w3.org/2000/01/rdf-schema.oml</semanticResources>
+    <semanticResources>build/oml/www.w3.org/ns/prov.oml</semanticResources>
     <semanticResources>build/oml/www.w3.org/2001/XMLSchema.oml</semanticResources>
-    <semanticResources>src/main/oml/caltech.edu/bundle/imports/discipline/computational-hypergraph-bundle.oml</semanticResources>
+    <semanticResources>build/oml/mds.jpl.nasa.gov/sa/bundle.oml</semanticResources>
+    <semanticResources>build/oml/mds.jpl.nasa.gov/sa/state-analysis.oml</semanticResources>
+    <semanticResources>build/oml/mds.jpl.nasa.gov/sa/base.oml</semanticResources>
+    <semanticResources>build/oml/mds.jpl.nasa.gov/sa/code-generation.oml</semanticResources>
+    <semanticResources>build/oml/opencaesar.io/viewpoint.oml</semanticResources>
+    <semanticResources>build/oml/www.w3.org/1999/02/22-rdf-syntax-ns.oml</semanticResources>
+    <semanticResources>build/oml/www.w3.org/2002/07/owl.oml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_9FbK0G6TEe2pvoRkDP4MxA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']"/>
     </ownedViews>

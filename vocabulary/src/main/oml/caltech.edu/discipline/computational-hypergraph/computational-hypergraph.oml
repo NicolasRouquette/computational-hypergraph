@@ -11,7 +11,7 @@ vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational
 	extends <http://www.w3.org/2001/XMLSchema#> as xsd
 	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 	
-	extends <http://caltech.edu/discipline/computational-hypergraph/base#> as base
+  extends <http://mds.jpl.nasa.gov/sa/base#> as base
 	
 	aspect HypergraphElement :> base:ContainedElement
 	
@@ -39,8 +39,6 @@ vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational
 		to Triangle
 		forward variableInput
 		reverse inputFromVariable
-		functional
-		inverse functional
 	]
 	
 	@rdfs:label "TriangleInputEdge"
@@ -49,8 +47,8 @@ vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational
 		to Triangle
 		forward outputToTriangle
 		reverse inputFromTriangle
-		functional
-		inverse functional
+		irreflexive
+		asymmetric
 	]
 	
 	@rdfs:label "OutputEdge"

@@ -1,7 +1,7 @@
 description <http://caltech.edu/examples/nested1#> as nested1 {
 	
 	uses <http://caltech.edu/discipline/computational-hypergraph/computational-hypergraph#> as ch
-	uses <http://caltech.edu/discipline/computational-hypergraph/base#> as base
+	uses <http://mds.jpl.nasa.gov/sa/base#> as base
 	
 	ci xi : ch:Variable 
 	
