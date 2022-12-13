@@ -13,6 +13,7 @@ import io.opencaesar.oml.Classifier;
 import io.opencaesar.oml.ConceptInstance;
 import io.opencaesar.oml.ConceptInstanceReference;
 import io.opencaesar.oml.Description;
+import io.opencaesar.oml.DescriptionStatement;
 import io.opencaesar.oml.IdentifiedElement;
 import io.opencaesar.oml.LinkAssertion;
 import io.opencaesar.oml.Literal;
@@ -33,6 +34,42 @@ import io.opencaesar.oml.util.OmlSwitch;
  */
 public class OmlServices {
     
+	public static Set<DescriptionStatement> getAllDescriptionStatements(Description description) {
+		var allDescriptions = new HashSet<Description>();
+    	allDescriptions.add(description);
+    	allDescriptions.addAll(
+    			OmlRead.getAllImportedOntologies(description, false).stream()
+    				.filter(o -> o instanceof Description)
+    				.map(o -> (Description) o)
+    				.collect(Collectors.toSet()));
+    	var allStatements = new HashSet<DescriptionStatement>();
+    	allDescriptions.stream().forEach(d -> {
+    		allStatements.addAll(d.getOwnedStatements().stream()
+    			.filter(i -> i instanceof DescriptionStatement)
+    			.map(i -> (DescriptionStatement)i)
+    			.collect(Collectors.toSet()));
+    	});
+    	return allStatements;
+	}
+	
+	public static Set<NamedInstance> getAllNamedInstances(Description description) {
+		var allNamedInstances = new HashSet<NamedInstance>();
+    	getAllDescriptionStatements(description).stream().forEach(i -> {
+    		NamedInstance ni = null;
+    		if (i instanceof NamedInstance) {
+    			ni = (NamedInstance) i;
+    		} else if (i instanceof ConceptInstanceReference) {
+    			ni = ((ConceptInstanceReference) i).getInstance();
+    		} else if (i instanceof RelationInstanceReference) {
+    			ni = ((RelationInstanceReference) i).getInstance();
+    		}
+    		if (ni != null) {
+    			allNamedInstances.add(ni);
+    		}
+    	});
+    	return allNamedInstances;
+	}
+	
     public static boolean isKindOf(NamedInstance instance, String kindName) {
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(instance.getOntology(), kindName);
 		return (kind != null) ? OmlSearch.findIsKindOf(instance, kind) : true;
@@ -172,141 +209,119 @@ public class OmlServices {
         return sources;
     }
    
-    public static List<NamedInstance> getLeafNamedInstancesOfKind(IdentifiedElement e, String kindName) {
+    public static Set<NamedInstance> getLeafNamedInstancesOfKind(IdentifiedElement e, String kindName) {
     	if (e instanceof Description) {
     		return getOwnedRootNamedInstancesOfKind((Description) e, kindName);
     	} else if (e instanceof ConceptInstance) {
     		return getOwnedNamedInstancesOfKind((ConceptInstance) e, kindName);
     	} else
-    		return Collections.emptyList();
+    		return Collections.emptySet();
     }
     
-    public static List<NamedInstance> getOwnedRootNamedInstancesOfKind(Description description, String kindName) {
+    public static Set<NamedInstance> getOwnedRootNamedInstancesOfKind(Description description, String kindName) {
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
     	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
-		
-    	return description.getOwnedStatements().stream()
+    	return getAllNamedInstances(description).stream()
     			.filter(i -> 
-    			i instanceof NamedInstance && 
-    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
-    			findInstancesRelatedTo((NamedInstance) i, bContains).isEmpty() &&
-    			OmlSearch.findInstancesRelatedFrom((NamedInstance) i, bContains).isEmpty())
-    			.map(i -> (NamedInstance)i)
-    			.collect(Collectors.toList());
+    			OmlSearch.findIsTypeOf(i, kind) &&
+    			findInstancesRelatedTo(i, bContains).isEmpty() &&
+    			OmlSearch.findInstancesRelatedFrom(i, bContains).isEmpty())
+    			.collect(Collectors.toSet());
     }
 
-    public static List<NamedInstance> getRootNonContainerNamedInstancesOfKind(Description description, String kindName) {
+    public static Set<NamedInstance> getRootNonContainerNamedInstancesOfKind(Description description, String kindName) {
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
     	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
-		
-    	return description.getOwnedStatements().stream()
+    	return getAllNamedInstances(description).stream()
     			.filter(i -> 
-    			i instanceof NamedInstance && 
-    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
-    			findInstancesRelatedTo((NamedInstance) i, bContains).isEmpty() &&
-    			OmlSearch.findInstancesRelatedFrom((NamedInstance) i, bContains).isEmpty())
-    			.map(i -> (NamedInstance)i)
-    			.collect(Collectors.toList());
+    			OmlSearch.findIsTypeOf(i, kind) &&
+    			findInstancesRelatedTo(i, bContains).isEmpty() &&
+    			OmlSearch.findInstancesRelatedFrom(i, bContains).isEmpty())
+    			.collect(Collectors.toSet());
     }
 
-    public static List<NamedInstance> getContainerNamedInstancesOfKind(IdentifiedElement e, String kindName) {
+    public static Set<NamedInstance> getContainerNamedInstancesOfKind(IdentifiedElement e, String kindName) {
     	if (e instanceof Description) {
     		return getContainerNamedInstancesOfKind((Description) e, kindName);
     	} else if (e instanceof ConceptInstance) {
     		return getOwnedNamedInstancesOfKind((ConceptInstance) e, kindName);
     	} else
-    		return Collections.emptyList();
+    		return Collections.emptySet();
     }
     
-    public static List<NamedInstance> getContainerNamedInstancesOfKind(Description description, String kindName) {
+    public static Set<NamedInstance> getContainerNamedInstancesOfKind(Description description, String kindName) {
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
     	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
-		
-    	return description.getOwnedStatements().stream()
+    	return getAllNamedInstances(description).stream()
     			.filter(i -> 
-    			i instanceof NamedInstance && 
-    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
-    			findInstancesRelatedTo((NamedInstance) i, bContains).isEmpty() &&
-    			!OmlSearch.findInstancesRelatedFrom((NamedInstance) i, bContains).isEmpty())
-    			.map(i -> (NamedInstance)i)
-    			.collect(Collectors.toList());
+    			OmlSearch.findIsTypeOf(i, kind) &&
+    			findInstancesRelatedTo(i, bContains).isEmpty() &&
+    			!OmlSearch.findInstancesRelatedFrom(i, bContains).isEmpty())
+    			.collect(Collectors.toSet());
     }
 
-    public static List<NamedInstance> getContainerNamedInstancesOfKind(ConceptInstance instance, String kindName) {
+    public static Set<NamedInstance> getContainerNamedInstancesOfKind(ConceptInstance instance, String kindName) {
     	var description = (Description) instance.getOntology();
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), kindName);
     	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description.getOntology(), "base:contains");
 		
-    	return description.getOwnedStatements().stream()
+    	return getAllNamedInstances(description).stream()
     			.filter(i -> 
-    			i instanceof NamedInstance && 
-    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
-    			findInstancesRelatedTo((NamedInstance) i, bContains).isEmpty() &&
-    			!OmlSearch.findInstancesRelatedFrom((NamedInstance) i, bContains).isEmpty())
-    			.map(i -> (NamedInstance)i)
-    			.collect(Collectors.toList());
+    			OmlSearch.findIsTypeOf(i, kind) &&
+    			findInstancesRelatedTo(i, bContains).isEmpty() &&
+    			!OmlSearch.findInstancesRelatedFrom(i, bContains).isEmpty())
+    			.collect(Collectors.toSet());
     }
-    public static List<NamedInstance> getOwnedNamedInstancesOfKind(NamedInstance parent, String kindName) {
+    public static Set<NamedInstance> getOwnedNamedInstancesOfKind(NamedInstance parent, String kindName) {
     	var description = (Description) parent.getOntology();
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description, kindName);
     	var bContains = (Relation) OmlRead.getMemberByAbbreviatedIri(description, "base:contains");
-    	return description.getOwnedStatements().stream()
+    	return getAllNamedInstances(description).stream()
     			.filter(i -> 
-    			i instanceof NamedInstance && 
-    			OmlSearch.findIsTypeOf((NamedInstance) i, kind) &&
-    			findInstancesRelatedTo((NamedInstance) i, bContains).contains(parent))
-    			.map(i -> (NamedInstance)i)
-    			.collect(Collectors.toList());
+    			OmlSearch.findIsTypeOf(i, kind) &&
+    			findInstancesRelatedTo(i, bContains).contains(parent))
+    			.collect(Collectors.toSet());
     }
 
-    public static List<NamedInstance> getInputNamedInstancesOfKind(NamedInstance parent, String kindName, String inputName) {
+    public static Set<NamedInstance> getInputNamedInstancesOfKind(NamedInstance parent, String kindName, String inputName) {
     	var description = (Description) parent.getOntology();
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description, kindName);
     	var input = (Relation) OmlRead.getMemberByAbbreviatedIri(description, inputName);
-    	List<NamedInstance> candidates = description.getOwnedStatements().stream()
+    	Set<NamedInstance> candidates = getAllNamedInstances(description).stream()
     			.filter(i -> 
-    			i instanceof NamedInstance && 
-    			OmlSearch.findIsTypeOf((NamedInstance) i, kind))
-    			.map(i -> 
-    				(NamedInstance)i)
-    			.collect(Collectors.toList());
-    	List<NamedInstance> inputs = candidates
+    			OmlSearch.findIsTypeOf(i, kind))
+    			.collect(Collectors.toSet());
+    	Set<NamedInstance> inputs = candidates
     			.stream()
-    			.filter(i -> OmlSearch.findInstancesRelatedFrom((NamedInstance) i, input).contains(parent))
-    			.collect(Collectors.toList());
+    			.filter(i -> OmlSearch.findInstancesRelatedFrom(i, input).contains(parent))
+    			.collect(Collectors.toSet());
     	return inputs;
     }
     
-
-    public static List<NamedInstance> getOutputNamedInstancesOfKind(NamedInstance parent, String kindName, String outputName) {
+    public static Set<NamedInstance> getOutputNamedInstancesOfKind(NamedInstance parent, String kindName, String outputName) {
     	var description = (Description) parent.getOntology();
     	var kind = (Classifier) OmlRead.getMemberByAbbreviatedIri(description, kindName);
     	var output = (Relation) OmlRead.getMemberByAbbreviatedIri(description, outputName);
-    	List<NamedInstance> candidates = description.getOwnedStatements().stream()
+    	Set<NamedInstance> candidates = getAllNamedInstances(description).stream()
     			.filter(i -> 
-    			i instanceof NamedInstance && 
-    			OmlSearch.findIsTypeOf((NamedInstance) i, kind))
-    			.map(i -> (NamedInstance)i)
-    			.collect(Collectors.toList());
-    	List<NamedInstance> outputs = candidates
+    			OmlSearch.findIsTypeOf(i, kind))
+    			.collect(Collectors.toSet());
+    	Set<NamedInstance> outputs = candidates
     			.stream()
     			.filter(i -> OmlSearch.findInstancesRelatedFrom(parent, output).contains(i))
-    			.collect(Collectors.toList());
+    			.collect(Collectors.toSet());
     	return outputs;
     }
     
-    public static List<NamedInstance> getOwnedNamedInstances(Description description) {
-    	return description.getOwnedStatements().stream()
-    			.filter(i -> i instanceof NamedInstance)
-    			.map(i -> (NamedInstance)i)
-    			.collect(Collectors.toList());
+    public static Set<NamedInstance> getOwnedNamedInstances(Description description) {
+    	return getAllNamedInstances(description).stream().collect(Collectors.toSet());
     }
     
-    public static List<NamedInstanceReference> getOwnedNamedInstanceReferences(Description description) {
-    	return description.getOwnedStatements().stream()
+    public static Set<NamedInstanceReference> getOwnedNamedInstanceReferences(Description description) {
+    	return getAllDescriptionStatements(description).stream()
     			.filter(i -> i instanceof NamedInstanceReference)
     			.map(i -> (NamedInstanceReference)i)
-    			.collect(Collectors.toList());
+    			.collect(Collectors.toSet());
     }
 
     public static Set<NamedInstance> getNamedInstancesInContext(Description description, boolean includeImports) {
