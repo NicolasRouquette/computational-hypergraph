@@ -60,7 +60,7 @@ configurations {
  * Dependency versions
  */
 ext { 
-    saVersion = '0.4.8'
+    saVersion = '0.4.9'
 }
 
 /*
