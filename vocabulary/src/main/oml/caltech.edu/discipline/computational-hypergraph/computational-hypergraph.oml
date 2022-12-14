@@ -11,7 +11,7 @@ vocabulary <http://caltech.edu/discipline/computational-hypergraph/computational
 	extends <http://www.w3.org/2001/XMLSchema#> as xsd
 	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 	
-  extends <http://mds.jpl.nasa.gov/sa/base#> as base
+  extends <http://imce.jpl.nasa.gov/foundation/base#> as base
 	
 	aspect HypergraphElement :> base:ContainedElement
 	

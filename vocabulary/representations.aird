@@ -10,18 +10,63 @@
     <semanticResources>src/main/oml/caltech.edu/examples/nested1.oml</semanticResources>
     <semanticResources>src/main/oml/caltech.edu/discipline/computational-hypergraph/computational-hypergraph.oml</semanticResources>
     <semanticResources>src/main/oml/caltech.edu/bundle/imports/discipline/computational-hypergraph-bundle.oml</semanticResources>
-    <semanticResources>build/oml/opencaesar.io/services/cprov.oml</semanticResources>
-    <semanticResources>build/oml/purl.org/dc/elements/1.1.oml</semanticResources>
-    <semanticResources>build/oml/www.w3.org/2000/01/rdf-schema.oml</semanticResources>
-    <semanticResources>build/oml/www.w3.org/ns/prov.oml</semanticResources>
-    <semanticResources>build/oml/www.w3.org/2001/XMLSchema.oml</semanticResources>
     <semanticResources>build/oml/mds.jpl.nasa.gov/sa/bundle.oml</semanticResources>
-    <semanticResources>build/oml/mds.jpl.nasa.gov/sa/state-analysis.oml</semanticResources>
-    <semanticResources>build/oml/mds.jpl.nasa.gov/sa/base.oml</semanticResources>
     <semanticResources>build/oml/mds.jpl.nasa.gov/sa/code-generation.oml</semanticResources>
+    <semanticResources>build/oml/www.w3.org/2000/01/rdf-schema.oml</semanticResources>
+    <semanticResources>build/oml/purl.org/dc/elements/1.1.oml</semanticResources>
+    <semanticResources>build/oml/mds.jpl.nasa.gov/sa/state-analysis.oml</semanticResources>
+    <semanticResources>build/oml/www.w3.org/2001/XMLSchema.oml</semanticResources>
     <semanticResources>build/oml/opencaesar.io/viewpoint.oml</semanticResources>
     <semanticResources>build/oml/www.w3.org/1999/02/22-rdf-syntax-ns.oml</semanticResources>
     <semanticResources>build/oml/www.w3.org/2002/07/owl.oml</semanticResources>
+    <semanticResources>build/oml/bipm.org/jcgm/jcgm-bundle.oml</semanticResources>
+    <semanticResources>build/oml/bipm.org/jcgm/vim4-annotations.oml</semanticResources>
+    <semanticResources>build/oml/bipm.org/jcgm/vim4-terminological-analysis.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-1087-1.oml</semanticResources>
+    <semanticResources>build/oml/bipm.org/jcgm/vim4.1-systems-diagram.oml</semanticResources>
+    <semanticResources>build/oml/bipm.org/jcgm/vim4.oml</semanticResources>
+    <semanticResources>build/oml/imce.jpl.nasa.gov/foundation/analysis.oml</semanticResources>
+    <semanticResources>build/oml/imce.jpl.nasa.gov/foundation/base.oml</semanticResources>
+    <semanticResources>build/oml/imce.jpl.nasa.gov/foundation/mission.oml</semanticResources>
+    <semanticResources>build/oml/imce.jpl.nasa.gov/foundation/bundle.oml</semanticResources>
+    <semanticResources>build/oml/imce.jpl.nasa.gov/foundation/project.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iec-80000-6.1.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-1.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iec-80000-6.10.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-4.9.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-4.8.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-4.1.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.8.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.1.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.7.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iec-80000-6.2.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iec-80000-6.11.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iec-80000-6.13.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iec-80000-6.21.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iec-80000-6.45.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iec-80000-6.46.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.10.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.5.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.11.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.12.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.14.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.15.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.2.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.3.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.4.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.6.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-3.9.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-4.11.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-4.13.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-4.14.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-4.15.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-4.2.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-4.26.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-4.3.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-5.1.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/iso-80000-bundle.oml</semanticResources>
+    <semanticResources>build/oml/mds.jpl.nasa.gov/sa/mission-extension.oml</semanticResources>
+    <semanticResources>build/oml/mds.jpl.nasa.gov/sa/mission.oml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_9FbK0G6TEe2pvoRkDP4MxA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']"/>
     </ownedViews>

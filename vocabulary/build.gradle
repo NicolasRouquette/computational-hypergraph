@@ -44,7 +44,7 @@ ext.dataset = [
  */
 repositories {
     mavenLocal()
-    maven { url 'https://artifactory.jpl.nasa.gov/artifactory/maven-remote-virtual' } 
+    maven { url 'https://artifactory.jpl.nasa.gov/artifactory/maven-remote-virtual' }
     maven { url 'https://artifactory.jpl.nasa.gov/artifactory/maven-libs-release-virtual' }
     mavenCentral()
 }
@@ -60,15 +60,13 @@ configurations {
  * Dependency versions
  */
 ext { 
-    coreVersion = '+'
-    saVersion = '+'
+    saVersion = '0.4.8'
 }
 
 /*
  * The OML dependencies
  */
 dependencies {
-	//oml "io.opencaesar.ontologies:core-vocabularies:$coreVersion"
   oml "gov.nasa.jpl.imce.autonomica:state-analysis-vocabularies:$saVersion"
 }
 
