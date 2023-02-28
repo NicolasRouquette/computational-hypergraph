@@ -148,7 +148,9 @@ task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn:
 /*
  * A task to build the project, which executes several tasks together
  */
-task build {
+// If this project is included in a parent gradle project,
+// then there may be a 'build' task. So we name this one "localBuild".
+task localBuild {
    group "oml"
    dependsOn owlReason
 }
@@ -156,7 +158,9 @@ task build {
 /*
 * A task to delete the build artifacts
 */
-task clean {
+// If this project is included in a parent gradle project,
+// then there may be a 'clean' task. So we name this one "localClean".
+task localClean {
    group "oml"
    delete file('build')
 }
